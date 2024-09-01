@@ -24,6 +24,12 @@ h1{
   justify-content: center;
   gap: 60px;
 }
+.greeting{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
 .heading{
   font-size: 8em;
 }
@@ -120,7 +126,7 @@ h1{
 #maths{
   background-color: rgb(253, 239, 221);
   width: 100%;
-  padding: 200px 0;
+  padding: 100px 0;
 }
 #maths h1{
   color: #333f55;
@@ -144,7 +150,7 @@ h1{
   height: 25vh;
   text-align: center;
   padding: 0 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: inset 6px 6px 5px 5px black ;
 }
 .math-ch:hover{
@@ -177,6 +183,103 @@ h1{
   box-shadow: inset 1px 1px 6px 1px red ;
 
 } */
+
+
+/* ================== todo list ====================== */
+
+#todoApp{
+  font-family: Arial, sans-serif;
+  background-color: #333f55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+#todoApp p{
+  color: aliceblue;
+  font-size: 2em;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.todo-container{
+  background-color: #606c817a;
+  padding: 100px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.todo-container h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 30px 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+#task-input, #date-input {
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 2em;
+  background-color: antiquewhite;
+}
+
+#add-task-button {
+  padding: 20px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 2em;
+
+}
+
+#add-task-button:hover {
+  background-color: #218838;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 2em;
+}
+
+.task-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1em;
+
+}
+
+.task-item button:hover {
+  background-color: #c82333;
+}
+
+
+/* ================== media querry ====================== */
 
 @media screen and (min-width: 600px) {
 .heading{
@@ -221,11 +324,10 @@ h1{
 .ch-container{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 60px;
 }
 .math-ch{
   display: flex;
-  flex-direction:row;
   justify-content: space-around;
 }
 .math-ch h2{
@@ -234,22 +336,26 @@ h1{
   max-width: 50%;
 }
 .lec-play-btn{
-  background-color: rgb(253, 239, 221);
-  padding: 5px 0;
-  width: 60px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  box-shadow:  3px 3px 4px 0px red ;
+  width: 100px;
+  height: 60px;
 }
 .lec-play-btn:active{
   transform: translateX(3px) translateY(3px);
 }
+.math-ch:hover{
+  box-shadow: 6px 6px 5px 3px rgb(255, 0, 111) ;  
+}
+
 .math-ch:hover .lec-play-btn{
-  box-shadow: 1px 1px 5px 1px rgb(0, 4, 255) ;  
+  box-shadow: 4px 4px 5px 3px rgb(255, 0, 111) ;  
 }
 .math-ch:hover h2{
-  text-shadow: 3px 3px 5px rgb(0, 4, 255) ;  
+  text-shadow: 4px 4px 6px rgb(255, 0, 111) ;  
 }
- 
+
+.goToHomePage, .goToMathPage{
+  height: 3em;
+  width: 3em;
+}
+
 }
