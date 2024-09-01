@@ -69,19 +69,4 @@ function clearInputs() {
     document.getElementById('date-input').value = '';
 }
 
-function doGreeting(personName = 'Dear'){ //taken default name as Dear
-  let myDate = new Date ();
-  let hours = myDate.getHours();
-  let heading = document.querySelector('.greeting'); //short hand
-  if (hours >= 4 && hours < 12 ){
-      heading.innerText = `Good Morning, ${personName}`;
-  } else if(hours >= 12 && hours < 18 ){
-      heading.innerText = `Good Afternoon, ${personName}`;
-  }else if(hours >= 18 && hours < 20 ){
-      heading.innerText = `Good Evening, ${personName}`;
-  }else{
-      heading.innerText = `Good Night, ${personName}`;
-  };
-}
-let personName= prompt(`What's your name:`)
-doGreeting(personName);
+
