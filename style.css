@@ -225,7 +225,7 @@ h1{
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 2em;
-  width: 100%;
+  min-width: 100%;
   background-color: antiquewhite;
 }
 
@@ -273,7 +273,13 @@ h1{
 .task-item button:hover {
   background-color: #c82333;
 }
-
+.clear-btn{
+  background-color: #c82333;
+  color: #fff;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 /* ================== media querry ====================== */
 

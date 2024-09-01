@@ -68,5 +68,3 @@ function clearInputs() {
     document.getElementById('task-input').value = '';
     document.getElementById('date-input').value = '';
 }
-
-
