@@ -181,7 +181,6 @@ h1{
 
 
 /* ================== todo list ====================== */
-
 #todoApp{
   font-family: Arial, sans-serif;
   background-color: #333f55;
@@ -189,8 +188,6 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
 }
 #todoApp p{
   color: aliceblue;
@@ -200,33 +197,36 @@ h1{
   justify-content: center;
 }
 .todo-container{
+  margin: 10vh;
   background-color: #606c817a;
   padding: 90px 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 60%;
 }
 
 .todo-container h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   margin: 30px 0;
+  font-weight: 800;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-bottom: 20px;
+  gap: 90px;
+  margin-bottom: 70px;
+  justify-content: center;
 }
-
-#task-input, #date-input {
-  padding: 20px 10px;
+.subject-input, #task-input, #date-input{
+  margin-bottom: 30px;
+  font-size: 2em;
+  padding: 40px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 2em;
   min-width: 100%;
   background-color: antiquewhite;
+
 }
 
 #add-task-button {
@@ -236,7 +236,9 @@ h1{
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 3em;
+  min-width: 100%;
+  margin-bottom: 40px;
 
 }
 
@@ -245,18 +247,24 @@ h1{
 }
 
 #task-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .task-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #f9f9f9;
+  background-color: #cceabd;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   font-size: 2em;
+  width: 80vw;
 }
 
 .task-item button {
@@ -264,7 +272,7 @@ h1{
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px 10px;
   cursor: pointer;
   font-size: 1em;
 
@@ -279,6 +287,7 @@ h1{
   font-size: 2em;
   padding: 10px;
   border-radius: 10px;
+
 }
 
 /* ================== media querry ====================== */
@@ -358,6 +367,10 @@ h1{
 .goToHomePage, .goToMathPage{
   height: 3em;
   width: 3em;
+}
+
+.todo-container{
+  width: 90%;
 }
 
 }

@@ -71,51 +71,38 @@
 </section>
 
 
-<!-- <section id="english">
-  <div class="sec-container">
-
-  </div> 
-</section>
-
-
-<section id="gk-gs">
-  <div class="sec-container">
-
-  </div> 
-</section>
-
-
-<section id="reasoning">
-  <div class="sec-container">
-
-  </div>
-</section>
-
-
-<section id="hindi">
-  <div class="sec-container">
-
-  </div>  
-</section>
- -->
-
 
 <!-- ===================== TO-DO APP ======================= -->
- 
+ <section class="todo-section">
 <div id="todoApp">
 <div class="todo-container">
 <p>Use this todo list to save your study records. So, Fill this after completing your task.</p>
   <h1>Todo List</h1>
-  <div class="input-group">
-    <input type="text" id="task-input" placeholder="Enter your task...">
-    <input type="date" id="date-input">
-    <button id="add-task-button">Add Task</button>
-  </div>
-  <ul id="task-list"></ul>
-</div>
-<button class="clear-btn" onclick="localStorage.clear()">Clear data</button>
-</div> 
+  <div class="input-group"></div>
+  <form for="subjectChoices" >     
+    <select name="subjectChoices" id="subjectChoices" class="chooseYourSub subject-input">
+      <option class="option" value="English">English</option>
+      <option class="option" value="reasoning">Reasoning</option>
+      <option class="option" value="mathematics">Mathematics</option>
+      <option class="option" value="hindi">Hindi</option>
+      <option class="option" value="gk-gs">Genral Knowledge</option>
+      <option class="option" value="gk-gs">Genral Studies</option>
+    </select>
+  </form>
 
+    <input type="text" id="task-input" placeholder="Enter your task...">
+    <input type="date" id="date-input" placeholder="dd-mm-yyyy">
+    <button id="add-task-button">Add Task</button>
+  <ul id="task-list"></ul>
+  </div>
+  <button class="clear-btn" onclick="localStorage.clear()">Clear data</button>
+</div>
+</div> 
+</section>
+<!-- ============================= Footer ========================= -->
+<footer>
+  
+</footer>
  
 <script src="script.js"></script>
 </body>

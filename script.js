@@ -2,17 +2,19 @@ document.addEventListener('DOMContentLoaded', loadTasks);
 document.getElementById('add-task-button').addEventListener('click', addTask);
 
 function addTask() {
+    const subjectInput = document.getElementById('subjectChoices').value;
     const taskInput = document.getElementById('task-input').value;
     const dateInput = document.getElementById('date-input').value;
 
-    if (taskInput === '' || dateInput === '') {
-        alert('Please enter both task and date');
+    if (subjectInput === '' || taskInput === '' || dateInput === '') {
+        alert('Please enter subject, task and date');
         return;
     }
 
     const task = {
+        subject: subjectInput,
         task: taskInput,
-        date: dateInput
+        date: dateInput,
     };
 
     let tasks = getTasksFromLocalStorage();
@@ -30,7 +32,7 @@ function addTaskToDOM(task) {
     li.className = 'task-item';
 
     li.innerHTML = `
-        <span>${task.task} - ${task.date}</span>
+        <span>${task.subject} \n<br> ${task.task} \n<br> ${task.date}</span>
         <button onclick="removeTask(this)">Remove</button>
     `;
 
@@ -39,11 +41,12 @@ function addTaskToDOM(task) {
 
 function removeTask(button) {
     const li = button.parentElement;
-    const taskText = li.firstChild.textContent.split(' - ')[0];
-    const dateText = li.firstChild.textContent.split(' - ')[1];
+    const subjectText = li.firstChild.textContent.split(' - ')[0];
+    const taskText = li.firstChild.textContent.split(' - ')[1];
+    const dateText = li.firstChild.textContent.split(' - ')[2];
 
     let tasks = getTasksFromLocalStorage();
-    tasks = tasks.filter(task => task.task !== taskText || task.date !== dateText);
+    tasks = tasks.filter(task => task.subject !== subjectText || task.task !== taskText || task.date !== dateText);
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     li.remove();
@@ -65,6 +68,7 @@ function getTasksFromLocalStorage() {
 }
 
 function clearInputs() {
+    document.getElementById('subjectChoices').value = '';
     document.getElementById('task-input').value = '';
     document.getElementById('date-input').value = '';
 }
