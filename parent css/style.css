@@ -1,0 +1,371 @@
+
+/* Disable text selection across the entire page */
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+.goto-ToDoApp{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 2.5em;
+  font-weight: 600;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(17, 137, 17);
+  color: #efe7e7;
+  box-shadow: 5px 5px 6px 3px greenyellow;
+}
+.goto-ToDoApp:active{
+  transform: translateX(10px) translateY(10px);
+
+}
+h1{
+  color: #fd9e6e;
+}
+.sec-container{
+  margin: 0 10%;
+}
+
+#landing-page{
+  background: #333f55;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.heading{
+  font-size: 8em;
+}
+.choice-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  text-align: center;
+}
+.choice-container form{
+  width: 100%;
+}
+.chooseYourSubHeading{
+  color: antiquewhite;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.chooseYourSub{
+  width: 100%;
+  /* height: 40px ; */
+  border-radius: 10px ;
+  border: none;
+  font-size: 1.5em;
+  color: #333f55;
+  font-weight: 600;
+  padding: 5px 20px;
+  text-align: center;
+
+}
+.goToHomePage{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 2em;
+  width: 2em;
+  background-color: rgba(100, 148, 237, 0.611);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.goToMathPage{
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  height: 2em;
+  width: 2em;
+  background-color: rgba(100, 148, 237, 0.504);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: rotateX(180deg);
+  padding: 10px;
+}
+
+/* ================ MATH-SECTION ============== */
+
+#maths{
+  background-color: rgb(253, 239, 221);
+  width: 100%;
+  padding: 100px 0;
+}
+#maths h1{
+  color: #333f55;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ch-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.math-ch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333f55;
+  height: 25vh;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 5px 5px black ;
+}
+.math-ch:hover{
+  box-shadow: 6px 6px 5px 3px rgb(0, 4, 255) ;  
+}
+.math-ch h2{
+  font-size: 1.1em;
+  color: rgb(253, 239, 221);
+}
+.lec-play-btn{
+  background-color: rgb(253, 239, 221);
+  padding: 5px 0;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow:  3px 3px 4px 0px red ;
+}
+.lec-play-btn:active{
+  transform: translateX(3px) translateY(3px);
+}
+.math-ch:hover .lec-play-btn{
+  box-shadow: 1px 1px 5px 1px rgb(0, 4, 255) ;  
+}
+.math-ch:hover h2{
+  text-shadow: 3px 3px 5px rgb(0, 4, 255) ;  
+}
+
+
+/* ================== todo list ====================== */
+#todoApp{
+  font-family: Arial, sans-serif;
+  background-color: #333f55;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#todoApp p{
+  color: aliceblue;
+  font-size: 2em;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.todo-container{
+  margin: 10vh 0 0 0;
+  background-color: #606c817a;
+  padding: 90px 20px 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container h1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 30px 0;
+  font-weight: 800;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+.subject-input, #task-input, #date-input{
+  margin-bottom: 30px;
+  font-size: 2em;
+  padding: 40px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 100%;
+  background-color: antiquewhite;
+
+}
+
+#add-task-button {
+  padding: 20px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 3em;
+  min-width: 100%;
+  margin-bottom: 40px;
+
+}
+
+#add-task-button:hover {
+  background-color: #218838;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6eeca;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 2em;
+  width: 80vw;
+}
+
+.task-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 1em;
+
+}
+
+.task-item button:hover {
+  background-color: #c82333;
+}
+.clear-btn{
+  background-color: #c82333;
+  color: #fff;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+/* ================== media querry ====================== */
+
+@media screen and (min-width: 600px) {
+.heading{
+  font-size: 10em;
+  font-weight: 800;
+}
+
+.choice-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  text-align: center;
+}
+.choice-container form{
+  width: 100%;
+}
+.chooseYourSubHeading{
+  color: antiquewhite;
+  font-size: 5em;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.chooseYourSub{
+  width: 100%;
+  height: 70px ;
+  border-radius: 10px ;
+  border: none;
+  font-size: 1.5em;
+  color: #333f55;
+  font-weight: 600;
+  padding: 5px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ch-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+.math-ch{
+  display: flex;
+  justify-content: space-around;
+}
+.math-ch h2{
+  font-size: 3em;
+  color: rgb(253, 239, 221);
+  max-width: 50%;
+}
+.lec-play-btn{
+  width: 120px;
+  height: 85px;
+}
+.lec-play-btn:active{
+  transform: translateX(3px) translateY(3px);
+}
+.lec-play-btn span{
+  font-size: 3em;
+}
+.math-ch:hover{
+  box-shadow: 6px 6px 5px 3px rgb(255, 0, 111) ;  
+}
+
+.math-ch:hover .lec-play-btn{
+  box-shadow: 4px 4px 5px 3px rgb(255, 0, 111) ;  
+}
+.math-ch:hover h2{
+  text-shadow: 4px 4px 6px rgb(255, 0, 111) ;  
+}
+
+.goToHomePage, .goToMathPage{
+  height: 3em;
+  width: 3em;
+}
+
+.todo-container{
+  width: 90%;
+}
+
+}
+
