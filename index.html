@@ -105,5 +105,18 @@
 </footer>
  
 <script src="script.js"></script>
+
+<script>
+  // Prevent copying using the clipboard event
+  document.addEventListener('copy', function (event) {
+      event.preventDefault();
+      alert("Copying is disabled on this website.");
+    });
+
+    // Disable right-click on the entire page
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+</script>
 </body>
 </html>
