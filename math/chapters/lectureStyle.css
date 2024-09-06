@@ -39,7 +39,6 @@ body {
   background: #f1f5fe;
 }
 .lectures-grid{
-  /* background-color: aquamarine; */
   display: grid;
   grid-template-columns: 1fr;
   padding: 30px;
@@ -62,15 +61,24 @@ body {
   margin: 10px 0;
   color: #222;
 }
-.notes-container{
+.extra-features{
   display: flex;
-  align-items: center;     /* Centers content vertically */
-  height: 30px;           /* Adjust the height as needed */
+  justify-content: space-between;
+  align-items: center;     
+  height: 30px;           
 }
-.notes-container a{
+.extra-features a{
   display: flex;
   align-items: center;
   color: blueviolet;
   text-decoration: none;
   text-align: center;
+}
+.right label{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  color: blueviolet;
+
 }

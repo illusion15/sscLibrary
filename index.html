@@ -79,22 +79,11 @@
 <p>Use this todo list to save your study records. So, Fill this after completing your task.</p>
   <h1>Todo List</h1>
   <div class="input-group"></div>
-  <form for="subjectChoices" >     
-    <select name="subjectChoices" id="subjectChoices" class="chooseYourSub subject-input">
-      <option class="option" value="English">English</option>
-      <option class="option" value="reasoning">Reasoning</option>
-      <option class="option" value="mathematics">Mathematics</option>
-      <option class="option" value="hindi">Hindi</option>
-      <option class="option" value="gk-gs">Genral Knowledge</option>
-      <option class="option" value="gk-gs">Genral Studies</option>
-    </select>
-  </form>
-
     <input type="text" id="task-input" placeholder="Enter your task...">
     <input type="date" id="date-input" placeholder="dd-mm-yyyy">
     <button id="add-task-button">Add Task</button>
-  <ul id="task-list"></ul>
   </div>
+  <ul id="task-list"></ul>
   <button class="clear-btn" onclick="localStorage.clear()">Clear data</button>
 </div>
 </div> 
@@ -113,10 +102,10 @@
       alert("Copying is disabled on this website.");
     });
 
-    // Disable right-click on the entire page
-    document.addEventListener('contextmenu', function (event) {
-      event.preventDefault();
-    });
+    // // Disable right-click on the entire page
+    // document.addEventListener('contextmenu', function (event) {
+    //   event.preventDefault();
+    // });
 </script>
 </body>
 </html>

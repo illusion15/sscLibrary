@@ -171,9 +171,9 @@ h1{
   justify-content: center;
 }
 .todo-container{
-  margin: 10vh;
+  margin: 10vh 0 0 0;
   background-color: #606c817a;
-  padding: 90px 20px;
+  padding: 90px 20px 0 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -321,11 +321,14 @@ h1{
   max-width: 50%;
 }
 .lec-play-btn{
-  width: 100px;
-  height: 60px;
+  width: 120px;
+  height: 85px;
 }
 .lec-play-btn:active{
   transform: translateX(3px) translateY(3px);
+}
+.lec-play-btn span{
+  font-size: 3em;
 }
 .math-ch:hover{
   box-shadow: 6px 6px 5px 3px rgb(255, 0, 111) ;  

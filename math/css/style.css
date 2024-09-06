@@ -49,10 +49,6 @@ nav{
 .subject-heading{
   margin-bottom: 16px;
 }
-main{
-  color: #eee;
-
-}
 .chapters-grid{
   display: grid;
   grid-template-columns: 1fr;
