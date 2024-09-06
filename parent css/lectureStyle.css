@@ -26,14 +26,19 @@ body {
   background: #e1e8f5;
   padding: 8px;
 }
+.nav-options a{
+  text-decoration: none;
+  color: black;
+}
 .nav-list{
-  padding: 7px 6px;
+  padding: 10px 6px;
   text-align: center;
   border-radius: 5px;
   font: 1.2em sans-serif;
 }
-.nav-list:first-child{
-  background: #f1f5fe; 
+.nav-bar ul li:first-child{
+  background: #f1f5fe;
+
 }
 .nav-list:hover{
   background: #f1f5fe;
@@ -70,7 +75,7 @@ body {
 .extra-features a{
   display: flex;
   align-items: center;
-  color: blueviolet;
+  color: #8c81e9;
   text-decoration: none;
   text-align: center;
 }
@@ -79,6 +84,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 3px;
-  color: blueviolet;
+  color: #8c81e9;
 
 }

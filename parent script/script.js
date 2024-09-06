@@ -68,3 +68,47 @@ function clearInputs() {
     document.getElementById('task-input').value = '';
     document.getElementById('date-input').value = '';
 }
+
+// Greeting h1
+
+// Check if the name is already saved in localStorage
+let personName = localStorage.getItem('personName');
+
+// If there's no name saved, prompt the user for their name
+if (!personName) {
+    personName = prompt("What's your name, dear?");
+    localStorage.setItem('personName', personName); 
+}
+
+function doGreeting(){ //taken default name as Dear
+    let myDate = new Date ();
+    let hours = myDate.getHours();
+    let heading = document.querySelector('.greeting');
+    
+    if (hours >= 4 && hours < 12 ){
+        heading.innerText = `Good Morning, ${personName}`;
+    } else if(hours >= 12 && hours < 18 ){
+        heading.innerText = `Good Afternoon, ${personName}`;
+    }else if(hours >= 18 && hours < 20 ){
+        heading.innerText = `Good Evening, ${personName}`;
+    }else{
+        heading.innerText = `Good Night, ${personName}`;
+    };
+}
+
+doGreeting();
+
+// Get references to the audio element and the play/pause button
+const audio = document.getElementById('myAudio');
+const playPauseBtn = document.getElementById('playPauseBtn');
+
+// Play/Pause toggle function
+playPauseBtn.addEventListener('click', function () {
+    if (audio.paused) {
+        audio.play(); // Play the audio
+        playPauseBtn.innerHTML = '<span class="material-symbols-outlined">volume_up </span>'; // Change button text to "Pause"
+    } else {
+        audio.pause(); // Pause the audio
+        playPauseBtn.innerHTML = `<span class="material-symbols-outlined">pause_circle</span>`; // Change button text to "Play"
+    }
+});
