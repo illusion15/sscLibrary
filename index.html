@@ -23,14 +23,14 @@
      <h1 class="heading">Library</h1>
      <div class="choice-container">
       <form for="subjectChoices" >     
-        <h3 class="chooseYourSubHeading">Choose Your Subject:</h3>
-        <select name="subjectChoices" id="subjectChoices" class="chooseYourSub">
-          <option class="option" value="English">English</option>
-          <option class="option" value="reasoning">Reasoning</option>
-          <option class="option" value="mathematics">Mathematics</option>
-          <option class="option" value="hindi">Hindi</option>
-          <option class="option" value="gk-gs">Genral Knowledge</option>
-          <option class="option" value="gk-gs">Genral Studies</option>
+        <select name="subjectChoices" onchange="goToLink()" id="subjectChoices" class="chooseYourSub">
+          <option class="option" value="" disabled selected>Choose Your Subject</option>
+          <option class="option" value="english/index.html">English</option>
+          <option class="option" value="reasoning/index.html">Reasoning</option>
+          <option class="option" value="math/index.html">Mathematics</option>
+          <option class="option" value="hindi/index.html">Hindi</option>
+          <option class="option" value="gk/index.html">Genral Knowledge</option>
+          <option class="option" value="gs/index.html">Genral Studies</option>
         </select>
       </form>
       </div>
@@ -47,13 +47,13 @@
 
       <div class="math-ch"><h2>Reasoning</h2><a href="reasoning/index.html"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
 
-      <div class="math-ch"><h2>English</h2><a href="https://youtube.com/playlist?list=PLXhQ4boKTgC0fQW5Od6Xa_njqAeIiEspz&si=TcbMo8yDlLGwDxoW"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
+      <div class="math-ch"><h2>English</h2><a href="english/index.html"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
 
-      <div class="math-ch"><h2>General Knowledge</h2><a href="https://youtube.com/playlist?list=PLXhQ4boKTgC0HjP6bckvgmNDQ_uHZCyVk&si=y1-rLk5vxq4GsYpd"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
+      <div class="math-ch"><h2>General Knowledge</h2><a href="gk/index.html"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
 
-      <div class="math-ch"><h2>General Studies</h2><a href="https://youtube.com/playlist?list=PLXhQ4boKTgC3UVvN9FNj9dH_czvBL80eG&si=kUvqcs2q3mo8l-1L"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
+      <div class="math-ch"><h2>General Studies</h2><a href="gs/index.html"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
 
-      <div class="math-ch"><h2>Hindi</h2><a href="https://youtube.com/playlist?list=PLXhQ4boKTgC2YVb1Jqmgsr7o8pvEs-lsG&si=zArqSbt6Fws3t_9G"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
+      <div class="math-ch"><h2>Hindi</h2><a href="hindi/index.html"><button class="lec-play-btn"><span class="material-symbols-outlined">play_arrow</span></button></a></div>
     </div>
   </div>
 </section>
@@ -64,13 +64,15 @@
  <section class="todo-section">
 <div id="todoApp">
 <div class="todo-container">
-<p>Use this todo list to save your study records. So, Fill this after completing your task.</p>
+<p>Use this todo list to save your study records. So, Fill this after completing your task.</p> <br>
+<p>On clicking 'Remove' button it will not delete the task. <br><br> On clicking "Clear data" it will erase all your saved data i.e, To-do, greeting name and also the checkbox of completion of lecture. So, try to not use this feature frequently. </p>
   <h1>Todo List</h1>
   <div class="input-group"></div>
     <input type="text" id="task-input" placeholder="Enter your task...">
     <input type="date" id="date-input" placeholder="dd-mm-yyyy">
     <button id="add-task-button">Add Task</button>
   </div>
+  <button class="resizeTaskList" onclick="resizeTaskList()">Hide / Unhide</button>
   <ul id="task-list"></ul>
   <button class="clear-btn" onclick="localStorage.clear()">Clear data</button>
 </div>
@@ -95,5 +97,25 @@
     //   event.preventDefault();
     // });
 </script>
+<script>
+  function goToLink() {
+      const selectElement = document.getElementById("subjectChoices");
+      const selectedValue = selectElement.value;
+      if (selectedValue) {
+          window.location.href = selectedValue; // Redirect to the selected link
+      }
+  }
+</script>
+  <script>
+    function resizeTaskList() {
+      const taskList = document.getElementById("task-list");
+            // Check the current height
+            if (taskList.style.height === "150px") {
+                taskList.style.height = "auto"; // Revert back to the default height
+            } else {
+                taskList.style.height = "150px"; // Set height to 150px
+            }        
+          }
+  </script>
 </body>
 </html>
