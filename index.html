@@ -29,8 +29,8 @@
           <option class="option" value="reasoning/index.html">Reasoning</option>
           <option class="option" value="math/index.html">Mathematics</option>
           <option class="option" value="hindi/index.html">Hindi</option>
-          <option class="option" value="gk/index.html">Genral Knowledge</option>
-          <option class="option" value="gs/index.html">Genral Studies</option>
+          <option class="option" value="gk/index.html">General Knowledge</option>
+          <option class="option" value="gs/index.html">General Studies</option>
         </select>
       </form>
       </div>
@@ -111,13 +111,32 @@
   <script>
     function resizeTaskList() {
       const taskList = document.getElementById("task-list");
-            // Check the current height
-            if (taskList.style.height === "150px") {
-                taskList.style.height = "auto"; // Revert back to the default height
-            } else {
-                taskList.style.height = "150px"; // Set height to 150px
-            }        
-          }
+
+      // Check the current height or use the stored height
+      if (taskList.style.height === "150px") {
+          taskList.style.height = "auto"; // Revert back to tdefault height
+          localStorage.setItem('task-list-height', 'auto');
+      } else {
+          taskList.style.height = "150px"; // Set height to 150px
+          localStorage.setItem('task-list-height', '150px');
+      }        
+    }
+
+    // Function to apply the saved height on page load
+function setInitialTaskListHeight() {
+    const taskList = document.getElementById("task-list");
+
+    // Retrieve the saved height from localStorage
+    const savedHeight = localStorage.getItem('task-list-height');
+
+    // Apply the saved height if it exists, otherwise leave it as default
+    if (savedHeight) {
+        taskList.style.height = savedHeight;
+    }
+}
+
+// Call the setInitialTaskListHeight function when the page loads
+window.onload = setInitialTaskListHeight;
   </script>
 </body>
 </html>

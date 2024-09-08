@@ -211,7 +211,7 @@ h1{
 }
 #todoApp p{
   color: aliceblue;
-  font-size: 2em;
+  font-size: 1.8em;
   max-width: 100%;
   text-align: center;
   justify-content: center;
@@ -277,6 +277,7 @@ h1{
 }
 
 #task-list {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -284,7 +285,7 @@ h1{
   height: auto;
   align-items: center;
   justify-content: center;
-  overflow: scroll; /* To hide overflow content */
+  overflow: auto; /* To hide overflow content */
   transition: height 0.3s ease; /* Smooth transition effect */
 }
 .resizeTaskList{
