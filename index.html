@@ -15,7 +15,7 @@
         <audio id="myAudio" src="maznil audio.mp3" controls></audio>
        <!-- Custom controls -->
       <div class="audio-controls">
-      <button id="playPauseBtn"><span class="material-symbols-outlined">volume_up </span>
+      <button id="playPauseBtn"><span class="material-symbols-outlined">volume_off </span>
       </button></div>
       </h2>
     
@@ -71,9 +71,10 @@
     <input type="date" id="date-input" placeholder="dd-mm-yyyy">
     <button id="add-task-button">Add Task</button>
   </div>
-  <button class="resizeTaskList" onclick="resizeTaskList()">Hide / Unhide</button>
+  <button class="resizeTaskList" onclick="resizeTaskList()">Fold / Unfold</button>
   <ul id="task-list"></ul>
-  <button class="clear-btn" onclick="localStorage.clear()">Clear data</button>
+  <button class="clear-btn" onclick="localStorage.clear()"><span class="material-symbols-outlined">warning</span> Clear data
+  </button>
   <div class="todo-info todo-container">
     <p>On clicking 'Remove' button it will not delete the task. <br><br> On clicking "Clear data" it will erase all your saved data i.e, To-do, greeting name and also the checkbox of completion of lecture. So, try to not use this feature frequently. </p>
   </div>
@@ -94,10 +95,10 @@
       alert("Copying is disabled on this website.");
     });
 
-    // // Disable right-click on the entire page
-    // document.addEventListener('contextmenu', function (event) {
-    //   event.preventDefault();
-    // });
+    // Disable right-click on the entire page
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
 </script>
 <script>
   function goToLink() {

@@ -72,3 +72,33 @@ nav{
 .chapter-name{
   font-weight: 400;
 }
+
+/* ================For Desktop View ======= */
+@media screen and (min-width: 1024px) {
+
+nav{
+  padding-left: 10%;
+  position: sticky;
+  top: 0;
+}
+
+.subject-heading{
+  padding: 30px 0 30px 300px;
+  font-size: 3em;
+}
+.chapters-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 300px;
+  gap: 15px;
+
+}
+.chapter-card{
+  padding: 40px 20px;
+
+}
+.chapter-name{
+  font-size: 2em;
+}
+
+}

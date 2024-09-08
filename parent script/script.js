@@ -39,11 +39,9 @@ function addTaskToDOM(task) {
 
 function removeTask(button) {
     const li = button.parentElement;
-    // const taskText = li.firstChild.textContent.split(' - ')[1];
-    // const dateText = li.firstChild.textContent.split(' - ')[2];
 
     let tasks = getTasksFromLocalStorage();
-    // tasks = tasks.filter(task => task.task !== taskText || task.date !== dateText);
+    
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     li.remove();
