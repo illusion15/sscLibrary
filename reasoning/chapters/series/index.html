@@ -33,127 +33,25 @@
         </ul>
       </div>
 
-      <main class="lectures-grid">
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Yz26CjIHN-g?si=UjOJFQ_gzDKnDlQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Word series (Foundation)</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox1"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jijtURcw_Ak?si=QkgTd0Rpe9ho406_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Number Series (Foundation)</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox2"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/idZ43LOroHk?si=AuAAtx6lHWmXaKEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Series Lecture: 1</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox3"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7j4ZnLWlSi4?si=N8qaLshg3yRsLLt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Series Lecture: 2</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox4"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MuK2ySBPZ2s?si=BpwYCDsynpFAVkbV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Series Lecture: 3</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox5"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lecture-card">
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qZAwH8syL5U?si=8bGH0jJjVoKKpHA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="lecture-info">
-            <h4>Series Lecture: 4</h4>
-            <div class="extra-features">
-              <div class="left">
-                <a style="color: red;">Notes Unavilable
-                <span class="material-symbols-outlined">download</span>
-                </a>
-              </div>
-              <div class="right">
-                <label>Completed<input class="myCheckbox" type="checkbox" id="seriesCbox6"></label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </main>
+      <main class="lectures-grid"></main>
 
     </div>
   </div>
 
+  <script src="../../../data/data.js"></script>
+  <script>
+    let lecturesContainerElement = document.querySelector('.lectures-grid');
+
+    let innerHtml = '';
+
+    reasoning_series_lectures.forEach(lectures => {
+    innerHtml +=  applyLectureInnerHtml(lectures);
+
+    });
+
+    lecturesContainerElement.innerHTML = innerHtml;
+
+    </script>
 
   <script src="../../../parent script/lectureScript.js"></script>
   <script>
