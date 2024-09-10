@@ -18,8 +18,14 @@
         <h1 class="subject-heading">Reasoning</h1>
       </header>
       <main class="chapters-grid">
+
+        <div onclick="window.location.href='chapters/All_content/index.html'" class="chapter-card">
+          <h2 class="chapter-name">All Content</h2>
+          <div class="videos-count-allContent"></div>
+        </div>
         <div onclick="window.location.href='chapters/series/index.html'" class="chapter-card">
           <h2 class="chapter-name">Series</h2>
+          <div class="videos-count-series"></div>
         </div>
 
         <div class="chapter-card">
@@ -116,6 +122,15 @@
 
     </div>
   </div>
+  <script src="../data/data.js"></script>  
+  <script> 
+    let videosCount4allContent = document.querySelector('.videos-count-allContent');
+    videosCount4allContent.innerHTML = `<span>Videos: ${reasoning_allContent_lectures.length}</span>`
+  </script>
+  <script> 
+    let videosCount = document.querySelector('.videos-count-series');
+    videosCount.innerHTML = `<span>Videos: ${reasoning_series_lectures.length}</span>`
+  </script>
 
   <script src="../parent script/chaptersScript.js"></script>
   <script>

@@ -24,18 +24,19 @@
           <a href="#">
             <li class="nav-list">Lectures</li>
           </a>
-          <a href="#">
+          <a href="../../shortNotes/Number System notes.pdf" target="_blank">
             <li class="nav-list">Short Notes</li>
           </a>
-          <a href="../../mathsNotes/16 Number System/Practice sheat/" target="_blank">
+          <!-- <a href="../../shortNotes/digital sum short notes.pdf" target="_blank"> -->
             <li class="nav-list">DPP</li>
-          </a>
+          <!-- </a> -->
         </ul>
       </div>
       <main class="lectures-grid"></main>
 
     </div>
   </div>
+
   <script src="../../../data/data.js"></script>
   <script>
     let lecturesContainerElement = document.querySelector('.lectures-grid');
@@ -44,13 +45,12 @@
 
     math_numberSystem_lectures.forEach(lectures => {
     innerHtml +=  applyLectureInnerHtml(lectures);
+  
+});
 
-    });
+lecturesContainerElement.innerHTML = innerHtml;
 
-    lecturesContainerElement.innerHTML = innerHtml;
-
-    </script>
-
+  </script>
   <script src="../../../parent script/lectureScript.js"></script>
   <script>
   function goToChaptersPage(){

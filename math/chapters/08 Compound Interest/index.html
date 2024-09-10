@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Series</title>
+  <title>Compound Interest</title>
   <link rel="icon" href="https://cdn.pixabay.com/photo/2019/01/30/08/30/book-3964050_1280.jpg" type="image/x-icon">
   <link rel="stylesheet" href="../../../parent css/chaptersStyle.css">
   <link rel="stylesheet" href="../../../parent css/lectureStyle.css">
@@ -17,22 +17,21 @@
   <div class="topic-container">
     <div class="subject-card">
       <header>
-        <h1 class="subject-heading">Series</h1>
+        <h1 class="subject-heading">Compound Interest</h1>
       </header>
       <div class="nav-bar">
         <ul class="nav-options">
           <a href="#">
             <li class="nav-list">Lectures</li>
           </a>
-          <a href="#">
+          <a href="../../shortNotes/Compound Interest notes.pdf" target="_blank">
             <li class="nav-list">Short Notes</li>
           </a>
-          <a href="../../shortNotes/series short notes.pdf" target="_blank">
+          <!-- <a href="../../shortNotes/digital sum short notes.pdf" target="_blank"> -->
             <li class="nav-list">DPP</li>
-          </a>
+          <!-- </a> -->
         </ul>
       </div>
-
       <main class="lectures-grid"></main>
 
     </div>
@@ -44,15 +43,14 @@
 
     let innerHtml = '';
 
-    reasoning_series_lectures.forEach(lectures => {
+    math_compoundInterest_lectures.forEach(lectures => {
     innerHtml +=  applyLectureInnerHtml(lectures);
+  
+});
 
-    });
+lecturesContainerElement.innerHTML = innerHtml;
 
-    lecturesContainerElement.innerHTML = innerHtml;
-
-    </script>
-
+  </script>
   <script src="../../../parent script/lectureScript.js"></script>
   <script>
   function goToChaptersPage(){
