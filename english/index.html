@@ -18,70 +18,25 @@
         <h1 class="subject-heading">English</h1>
       </header>
       <main class="chapters-grid">
-        <p style="text-align: center; margin-top: 50px;">Coming soon...</p>
 
-      <!--   <div onclick="window.location.href='chapters/digitalSum/index.html'" class="chapter-card">
-          <h2 class="chapter-name">Digital Sum</h2>
+        <div onclick="window.location.href='chapters/All_content/index.html'" class="chapter-card">
+          <h2 class="chapter-name">All Content</h2>
+          <div class="videos-count-allContent"></div>
         </div>
 
-        <div onclick="window.location.href='chapters/percentage/index.html'"  class="chapter-card">
-          <h2 class="chapter-name">Percentage</h2>
-        </div>
-        <div onclick="window.location.href='chapters/profit&loss/index.html'" class="chapter-card">
-          <h2 class="chapter-name">Profit and Loss</h2>
-        </div>
-        <div onclick="window.location.href='chapters/time&work/index.html'" class="chapter-card">
-          <h2 class="chapter-name">Time and Work</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Work and Wages</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Pipe and Cistern</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Simple Interest</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Compound Interest</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Average</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Ratio</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Ages</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Partnership</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Proportion</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Algebra</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Trignometry</h2>
-        </div>
-        <div onclick="window.location.href='chapters/numberSystem/index.html'" class="chapter-card">
-          <h2 class="chapter-name">Number System</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Geometry</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Mensuration 2D</h2>
-        </div>
-        <div class="chapter-card">
-          <h2 class="chapter-name">Mensuration 3D</h2>
-        </div>-->
-      </main> 
+      </main>
 
     </div>
   </div>
+  <script src="../data/data.js"></script>  
+  <script> 
+    let videosCount4allContent = document.querySelector('.videos-count-allContent');
+    videosCount4allContent.innerHTML = `<span>Videos: ${english_allContent_lectures.length}</span>`
+  </script>
+  <script> 
+    let videosCount = document.querySelector('.videos-count-series');
+    videosCount.innerHTML = `<span>Videos: ${english_allContent_lectures.length}</span>`
+  </script>
 
   <script src="../parent script/chaptersScript.js"></script>
   <script>

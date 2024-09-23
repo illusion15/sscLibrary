@@ -527,3 +527,12 @@ const math_compoundInterest_lectures = [
     notesAddress: `../../mathsNotes/08 Compound Interest/04.pdf`,
   },
 ]
+
+const english_allContent_lectures = [
+  { 
+    id: '0079',
+    lecName: `Preposition`,
+    lecAddress: `https://www.youtube.com/embed/MZpgqzBKZfw?si=m5M23A2LG1XYALke`,
+    notesAddress: `../englishNotes/01 Preposition/preposition.pdf`,
+  },
+] 
