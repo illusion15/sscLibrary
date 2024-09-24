@@ -1,24 +1,26 @@
 
 function applyLectureInnerHtml(lectures){
   return `<div class="lecture-card">
-   <div class="iframe-container">
-   <iframe width="560" height="315" src="${lectures.lecAddress}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   </div>
-   <div class="lecture-info">
-   <h4>${lectures.lecName}</h4>
-   <div class="extra-features">
-   <div class="left">
-   <a href="${lectures.notesAddress}" target="_blank">Download Notes
-   <span class="material-symbols-outlined">download</span>
-   </a>
-   </div>
-   <div class="right">
-   <label>Completed<input class="myCheckbox" type="checkbox" id="${lectures.id}"></label>
-   </div>
-   </div>
-   </div>
+    <div class="iframe-container">
+    <iframe width="560" height="315" src="${lectures.lecAddress}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="lecture-info">
+      <h4>${lectures.lecName}</h4>
+      <div class="extra-features">
+        <div class="left">
+          <a href="${lectures.notesAddress}" target="_blank">Download Notes
+          <span class="material-symbols-outlined">download</span>
+          </a>
+        </div>
+        <div class="right">
+          <label>Completed<input class="myCheckbox" type="checkbox" id="${lectures.id}"></label>
+        </div>
+      </div>
+    </div>
    </div>`
 }; 
+
+
 
 // REASONING =====================================
 const reasoning_series_lectures = [
@@ -254,6 +256,7 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/DSsCkheNsb0?si=awU8397UArVn59FG`,
     notesAddress: null,
   },
+    
 ] 
 
 // Mathematics =========================================
@@ -532,7 +535,28 @@ const english_allContent_lectures = [
   { 
     id: '0079',
     lecName: `Preposition`,
-    lecAddress: `https://www.youtube.com/embed/MZpgqzBKZfw?si=m5M23A2LG1XYALke`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/MZpgqzBKZfw?si=m5M23A2LG1XYALke`,
     notesAddress: `../englishNotes/01 Preposition/preposition.pdf`,
   },
 ] 
+
+const gs_allContent_lectures = [
+  {
+    id: '0080',
+    lecName: `Indian Classical Dance (शास्त्रीय नृत्य)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/2tEkjfq7ayQ?si=YaRZq4M4qIxNP2dx`,
+    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+  },
+  {
+    id: '0081',
+    lecName: `Folk Dance (लोक नृत्य)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/0pGAFRprdGA?si=EbE5rBraroC6l6EU`,
+    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+  },
+  {
+    id: '0082',
+    lecName: `Folk Dance (लोक नृत्य) Questions Practice`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/cXTC_aVEjhA?si=06sdUSLEHmgqHCQ7`,
+    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+  },
+]
