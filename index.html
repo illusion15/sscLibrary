@@ -9,6 +9,9 @@
 <body>
 <!-- =================== landing-page============================== -->
   <header id="landing-page">
+    <marquee class="updates-notification" behavior="scroll" direction="left">
+      <span class="material-symbols-outlined">campaign</span> UPDATES: Reasoning all chapters has been added.  &nbsp;&nbsp;|| &nbsp;&nbsp; Some lectures has been added to the English and GS.
+    </marquee>
     <div class="greeting-container">
       <h1 class="greeting">Always remember:</h1>
       <h2>Always remember:
@@ -73,7 +76,7 @@
   </div>
   <button class="resizeTaskList" onclick="resizeTaskList()">Fold / Unfold</button>
   <ul id="task-list"></ul>
-  <button class="clear-btn" onclick="localStorage.clear()"><span class="material-symbols-outlined">warning</span> Clear data
+  <button class="clear-btn" onclick="cleardata()"><span class="material-symbols-outlined">warning</span> Clear data
   </button>
   <div class="todo-info todo-container">
     <p>On clicking 'Remove' button it will not delete the task. <br><br> On clicking "Clear data" it will erase all your saved data i.e, To-do, greeting name and also the checkbox of completion of lecture. So, try to not use this feature frequently. </p>
@@ -87,6 +90,17 @@
 </footer>
  
 <script src="parent script/script.js"></script>
+
+<script>
+  function cleardata(){
+      let warn = prompt("Warning: It will erase your: \n(i) to-do tasks \n(ii) chapters completed checkbox. \n\nTo confirm that you want to delete, type: YES");
+    if (warn === "YES"){
+      localStorage.clear();
+    }else{
+      alert("Your data is safe");
+    }
+  }
+</script>
 
 <script>
   // Prevent copying using the clipboard event

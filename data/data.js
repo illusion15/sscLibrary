@@ -63,7 +63,7 @@ const reasoning_series_lectures = [
   
   ]
 
-const reasoning_allContent_lectures = [
+const reasoning_CI_lectures = [
   { 
     id: '0007',
     lecName: `Coded Inequality part-1`,
@@ -76,6 +76,8 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/8A7cMUKmCr8?si=m1s1xKrVCzlEWm-R`,
     notesAddress: null,
   },
+]
+const reasoning_CD_lectures = [
   { 
     id: '0009',
     lecName: `Coding Decoding Part-1`,
@@ -88,36 +90,48 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/NycXqbzLUSY?si=N4BrMOVi-IMPSo3_`,
     notesAddress: null,
   },
+]
+const reasoning_RA_lectures = [
   { 
     id: '0011',
     lecName: `Ranking Arrangement`,
     lecAddress: `https://www.youtube-nocookie.com/embed/2ivIPqjZe1Q?si=FMHmFdjgJLnTh2w3`,
     notesAddress: null,
   },
+]
+const reasoning_dice_lectures = [
   { 
     id: '0012',
     lecName: `Dice`,
     lecAddress: `https://www.youtube-nocookie.com/embed/HMvk6ggn8GQ?si=y_Q_xDhNs5AFrHC`,
     notesAddress: null,
   },
+]
+const reasoning_calendar_lectures = [
   { 
     id: '0013',
     lecName: `Calendar`,
     lecAddress: `https://www.youtube-nocookie.com/embed/gCOshTqyFGo?si=jHoVt2LIawb23jdZ`,
     notesAddress: null,
   },
+]
+const reasoning_MandWimg_lectures = [
   { 
     id: '0014',
     lecName: `Mirror and Water Image`,
     lecAddress: `https://www.youtube-nocookie.com/embed/nUIDOEL0S4E?si=UigWKotsgGBPY7Cw`,
     notesAddress: null,
   },
+]
+const reasoning_revision_lectures = [
   { 
     id: '0015',
     lecName: `REVISION`,
     lecAddress: `https://www.youtube-nocookie.com/embed/k7Cos7gj9Bc?si=fPrKqvMN1clo515b`,
     notesAddress: null,
   },
+]
+const reasoning_syllogism_lectures = [
   { 
     id: '0016',
     lecName: `Syllogism Part-1`,
@@ -130,24 +144,32 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/KtL_6wLlBgI?si=wElAc9-siT6474zy`,
     notesAddress: null,
   },
+]
+const reasoning_NAS_lectures = [
   { 
     id: '0018',
     lecName: `Number Analogy and Similarity`,
     lecAddress: `https://www.youtube-nocookie.com/embed/BoMRZlWXIrs?si=QNXRP20ACM69Zd13`,
     notesAddress: null,
   },
+]
+const reasoning_LA_lectures = [
   { 
     id: '0019',
     lecName: `Letter Analogy`,
     lecAddress: `https://www.youtube-nocookie.com/embed/kn0sGyilV60?si=AlGItNAS65gaj_tx`,
     notesAddress: null,
   },
+]
+const reasoning_similarity_lectures = [
   { 
     id: '0020',
     lecName: `Similarity`,
     lecAddress: `https://www.youtube-nocookie.com/embed/vn2k1sd_sFU?si=0uBl-EwiMdH3gLWO`,
     notesAddress: null,
   },
+]
+const reasoning_MO_lectures = [
   { 
     id: '0021',
     lecName: `Mathematical Operations Part-1`,
@@ -160,6 +182,8 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/fiqpUJnlfDo?si=cFw2BSmaiaW_L9XY`,
     notesAddress: null,
   },
+]
+const reasoning_CF_lectures = [
   { 
     id: '0023',
     lecName: `Counting Figure Part-1`,
@@ -172,18 +196,24 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/ZYajtR1qFM8?si=ueq4iplwUrWDWXGt`,
     notesAddress: null,
   },
+]
+const reasoning_AT_lectures = [
   { 
     id: '0025',
     lecName: `Alphabet Test`,
     lecAddress: `https://www.youtube-nocookie.com/embed/SMW0xJf2o4Y?si=GRamLF82jAkHY4SU`,
     notesAddress: null,
   },
+]
+const reasoning_PCF_lectures = [
   { 
     id: '0026',
     lecName: `Paper Cutting and Folding`,
     lecAddress: `https://www.youtube-nocookie.com/embed/54UMaqjs-QM?si=nq4KnozcoCh60xm3`,
     notesAddress: null,
   },
+]
+const reasoning_VD_lectures = [
   { 
     id: '0027',
     lecName: `Venn Diagram Part-1`,
@@ -196,12 +226,16 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/XA7CaWmuIWs?si=-HDEivjMlDnr55wz`,
     notesAddress: null,
   },
+]
+const reasoning_AW_lectures = [
   { 
     id: '0029',
     lecName: `Arrangement of Words`,
     lecAddress: `https://www.youtube-nocookie.com/embed/nG7zEifoW_0?si=TFHyjUguE8CgdCwu`,
     notesAddress: null,
   },
+]
+const reasoning_NS_lectures = [
   { 
     id: '0030',
     lecName: `Number Series Part-1`,
@@ -214,12 +248,16 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/qCfdHjbh2_4?si=7bwSLXQZKgya-sY-`,
     notesAddress: null,
   },
+]
+const reasoning_marathon_lectures = [
   { 
     id: '0032',
     lecName: `Reasoning Marathon`,
     lecAddress: `https://www.youtube-nocookie.com/embed/n0LOpxYT0t8?si=oOlkeTFwajco4GCa`,
     notesAddress: null,
   },
+]
+const reasoning_FS_lectures = [
   { 
     id: '0033',
     lecName: `Figure Series Part-1`,
@@ -232,6 +270,8 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/L6LXY2_Ty9k?si=G-u3__aJKf9phryZ`,
     notesAddress: null,
   },
+]
+const reasoning_OOO_lectures = [
   { 
     id: '0035',
     lecName: `Odd One Out Part-1`,
@@ -244,12 +284,16 @@ const reasoning_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/p0buOtEQNFk?si=sYaJTXSoGPhI92ip`,
     notesAddress: null,
   },
+]
+const reasoning_LS_lectures = [
   { 
     id: '0037',
     lecName: `Letter Series`,
     lecAddress: `https://www.youtube-nocookie.com/embed/RRTCE9dgKdE?si=_Pyu9jSWVsSxU7_v`,
     notesAddress: null,
   },
+]
+const reasoning_direction_lectures = [
   { 
     id: '0038',
     lecName: `Direction`,
