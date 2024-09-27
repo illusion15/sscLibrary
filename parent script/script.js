@@ -19,15 +19,17 @@ function addTask() {
     tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
-    addTaskToDOM(task);
+    addTaskToDOM(task, tasks.length - 1); // Add task with the correct index
     clearInputs();
     updateTaskCount(); // Update task count after adding a task
 }
 
-function addTaskToDOM(task, index = null) {
+function addTaskToDOM(task, index) {
     const taskList = document.getElementById('task-list');
     const li = document.createElement('li');
     li.className = 'task-item';
+    li.setAttribute('draggable', 'true'); // Make list item draggable
+    li.dataset.index = index; // Add index as data attribute for reference
 
     const taskText = document.createElement('span');
     taskText.innerHTML = `${task.task} <br> ${task.date}`;
@@ -45,6 +47,66 @@ function addTaskToDOM(task, index = null) {
     li.appendChild(removeButton);
 
     taskList.appendChild(li);
+
+    // Add drag-and-drop event listeners
+    li.addEventListener('dragstart', dragStart);
+    li.addEventListener('dragover', dragOver);
+    li.addEventListener('drop', drop);
+    li.addEventListener('dragend', dragEnd);
+}
+
+function dragStart(e) {
+    e.dataTransfer.setData('text/plain', e.target.dataset.index);
+    e.target.classList.add('dragging');
+}
+
+function dragOver(e) {
+    e.preventDefault(); // Allow dropping
+    const afterElement = getDragAfterElement(e.clientY);
+    const taskList = document.getElementById('task-list');
+    const draggingElement = document.querySelector('.dragging');
+    
+    if (afterElement == null) {
+        taskList.appendChild(draggingElement);
+    } else {
+        taskList.insertBefore(draggingElement, afterElement);
+    }
+}
+
+function drop(e) {
+    e.preventDefault();
+    const draggingElement = document.querySelector('.dragging');
+    draggingElement.classList.remove('dragging');
+
+    const draggedIndex = e.dataTransfer.getData('text/plain');
+    const newIndex = Array.from(document.querySelectorAll('.task-item')).indexOf(draggingElement);
+
+    // Update task order in localStorage
+    let tasks = getTasksFromLocalStorage();
+    const [movedTask] = tasks.splice(draggedIndex, 1); // Remove dragged task
+    tasks.splice(newIndex, 0, movedTask); // Insert it at the new position
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function dragEnd() {
+    const draggingElement = document.querySelector('.dragging');
+    if (draggingElement) {
+        draggingElement.classList.remove('dragging');
+    }
+}
+
+function getDragAfterElement(y) {
+    const draggableElements = [...document.querySelectorAll('.task-item:not(.dragging)')];
+
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+            return { offset: offset, element: child };
+        } else {
+            return closest;
+        }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
 function editTask(li, index) {
@@ -108,9 +170,8 @@ function clearInputs() {
 function updateTaskCount() {
     let listLength = document.querySelector(".list-length");
     let tasks = document.querySelectorAll("#task-list li"); // Select all <li> elements (tasks) in task-list
-    listLength.innerText = `You have completed ${tasks.length} task${tasks.length !== 1 ? 's' : ''}.`;
+    listLength.innerText = `You completed ${tasks.length} task${tasks.length !== 1 ? 's' : ''}.`;
 }
-
 
 // ===================== Greeting ===============
 
