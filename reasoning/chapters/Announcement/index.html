@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Content (Reasoning)</title>
+  <title>Announcement</title>
   <link rel="icon" href="https://cdn.pixabay.com/photo/2019/01/30/08/30/book-3964050_1280.jpg" type="image/x-icon">
   <link rel="stylesheet" href="../../../parent css/chaptersStyle.css">
   <link rel="stylesheet" href="../../../parent css/lectureStyle.css">
@@ -18,7 +18,7 @@
   <div class="topic-container">
     <div class="subject-card">
       <header>
-        <h1 class="subject-heading">All Content (Reasoning)</h1>
+        <h1 class="subject-heading">Announcement</h1>
       </header>
       <div class="nav-bar">
         <ul class="nav-options">
@@ -28,7 +28,7 @@
           <a href="#">
             <li class="nav-list">Short Notes</li>
           </a>
-          <a href="../../shortNotes/series short notes.pdf" target="_blank">
+          <a href="../../shortNotes/series short notes.pdf" target="_blank">  
             <li class="nav-list">DPP</li>
           </a>
         </ul>
@@ -43,24 +43,20 @@
 
 <script>
   let lecturesContainerElement = document.querySelector('.lectures-grid');
-
   let innerHtml = '';
-
-  reasoning_allContent_lectures.forEach(lectures => {
+  reasoning_announcement_lectures.forEach(lectures => {
   innerHtml +=  applyLectureInnerHtml(lectures);
-
   });
 
   lecturesContainerElement.innerHTML = innerHtml;
+</script>
 
-  </script>
-
-  <script src="../../../parent script/lectureScript.js"></script>
-  <script>
+<script src="../../../parent script/lectureScript.js"></script>
+<script>
   function goToChaptersPage(){
     window.location.href='../../index.html';
   }
-  </script>
+</script>
   
 </body>
 </html>

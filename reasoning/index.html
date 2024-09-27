@@ -19,9 +19,9 @@
       </header>
       <main class="chapters-grid">
 
-        <div onclick="window.location.href='chapters/All_content/index.html'" class="chapter-card">
-          <h2 class="chapter-name">All Content</h2>
-          <div class="videos-count-allContent"></div>
+        <div onclick="window.location.href='chapters/Announcement/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Announcement</h2>
+          <div class="videos-count-announcement"></div>
         </div>
         <div onclick="window.location.href='chapters/series/index.html'" class="chapter-card">
           <h2 class="chapter-name">Series (By Arun Sir)</h2>
@@ -95,21 +95,18 @@
         <div onclick="window.location.href='chapters/22 Direction/index.html'" class="chapter-card">
           <h2 class="chapter-name">Direction</h2>
         </div>
+        <div onclick="window.location.href='chapters/23 Blood Relation/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Blood Relation</h2>
+        </div>
+        <div onclick="window.location.href='chapters/24 Clock/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Clock</h2>
+        </div>
 
       </main>
 
     </div>
   </div>
   <script src="../data/data.js"></script>  
-  <script> 
-    let videosCount4allContent = document.querySelector('.videos-count-allContent');
-    videosCount4allContent.innerHTML = `<span>Videos: ${reasoning_allContent_lectures.length}</span>`
-  </script>
-  <script> 
-    let videosCount = document.querySelector('.videos-count-series');
-    videosCount.innerHTML = `<span>Videos: ${reasoning_series_lectures.length}</span>`
-  </script>
-
   <script src="../parent script/chaptersScript.js"></script>
   <script>
     function gotToLandingPage(){

@@ -23,6 +23,15 @@ function applyLectureInnerHtml(lectures){
 
 
 // REASONING =====================================
+const reasoning_announcement_lectures = [
+  { 
+    id: '0001.1',
+    lecName: `Reasoning Syllabus`,
+    lecAddress: `Reasoning syllabus.pdf`,
+    notesAddress: `Reasoning syllabus.pdf`,
+  },
+]
+
 const reasoning_series_lectures = [
   { 
     id: '0001',
@@ -312,9 +321,30 @@ const reasoning_direction_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/DSsCkheNsb0?si=awU8397UArVn59FG`,
     notesAddress: null,
   },
-    
-] 
 
+] 
+const reasoning_bloodRelation_lectures = [
+  { 
+    id: '0038.1',
+    lecName: `Blood Relation Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/bmJjHfnJHSY?si=utTQxLcPfN2BzLHd`,
+    notesAddress: null,
+  },
+  { 
+    id: '0038.2',
+    lecName: `Blood Relation Lec-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/SSRJ8vQ8lnc?si=Ss5xBRG-DrnIKAzc`,
+    notesAddress: null,
+  },
+]
+const reasoning_clock_lectures = [
+  { 
+    id: '0038.1',
+    lecName: `Clock`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/LS-VmcadNw8?si=vszfqXcv06QzndTI`,
+    notesAddress: null,
+  },
+]
 // Mathematics =========================================
 
 const math_digitalSum_lectures = [
@@ -616,3 +646,4 @@ const gs_allContent_lectures = [
     notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
 ]
+

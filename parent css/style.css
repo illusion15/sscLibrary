@@ -117,7 +117,7 @@ h1{
   border: none;
   font-size: 1.5em;
   font-weight: 600;
-  background-color: #f4d3ee;
+  background-color: #e2f2c3;
   color: #1c222d;
   text-align: center;
   border-radius: 40px ;
@@ -192,7 +192,7 @@ h1{
   text-align: center;
   padding: 0 10px;
   border-radius: 20px;
-  box-shadow: inset 6px 6px 5px 5px rgb(59, 58, 58) ;
+  box-shadow: inset 6px 6px 5px 5px rgb(0, 0, 0);
 }
 .math-ch h2{
   font-size: 1.1em;
@@ -395,7 +395,10 @@ edit-button span{
   font-weight: 800;
   margin-right: 10px;
 }
-
+.list-length{
+  display: inline-block;
+  color: #fff;
+}
 /* ================== media querry ====================== */
 
 /* For Mobile Portrait View */

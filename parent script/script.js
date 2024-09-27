@@ -1,107 +1,118 @@
 document.addEventListener('DOMContentLoaded', loadTasks);
-        document.getElementById('add-task-button').addEventListener('click', addTask);
+document.getElementById('add-task-button').addEventListener('click', addTask);
 
-        function addTask() {
-            const taskInput = document.getElementById('task-input').value;
-            const dateInput = document.getElementById('date-input').value;
+function addTask() {
+    const taskInput = document.getElementById('task-input').value;
+    const dateInput = document.getElementById('date-input').value;
 
-            if (taskInput === '' || dateInput === '') {
-                alert('Please enter task and date');
-                return;
-            }
+    if (taskInput === '' || dateInput === '') {
+        alert('Please enter task and date');
+        return;
+    }
 
-            const task = {
-                task: taskInput,
-                date: dateInput,
-            };
+    const task = {
+        task: taskInput,
+        date: dateInput,
+    };
 
-            let tasks = getTasksFromLocalStorage();
-            tasks.push(task);
-            localStorage.setItem('tasks', JSON.stringify(tasks));
+    let tasks = getTasksFromLocalStorage();
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 
-            addTaskToDOM(task);
-            clearInputs();
-        }
+    addTaskToDOM(task);
+    clearInputs();
+    updateTaskCount(); // Update task count after adding a task
+}
 
-        function addTaskToDOM(task, index = null) {
-            const taskList = document.getElementById('task-list');
-            const li = document.createElement('li');
-            li.className = 'task-item';
+function addTaskToDOM(task, index = null) {
+    const taskList = document.getElementById('task-list');
+    const li = document.createElement('li');
+    li.className = 'task-item';
 
-            const taskText = document.createElement('span');
-            taskText.innerHTML = `${task.task} <br> ${task.date}`;
+    const taskText = document.createElement('span');
+    taskText.innerHTML = `${task.task} <br> ${task.date}`;
 
-            const editButton = document.createElement('edit-button');
-            editButton.innerHTML = `<span class="material-symbols-outlined">edit_note</span>Edit`;
-            editButton.onclick = () => editTask(li, index);
+    const editButton = document.createElement('edit-button');
+    editButton.innerHTML = `<span class="material-symbols-outlined">edit_note</span>Edit`;
+    editButton.onclick = () => editTask(li, index);
 
-            const removeButton = document.createElement('button');
-            removeButton.textContent = 'Remove';
-            removeButton.onclick = () => removeTask(li, index);
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.onclick = () => removeTask(li, index);
 
-            li.appendChild(taskText);
-            li.appendChild(editButton);
-            li.appendChild(removeButton);
+    li.appendChild(taskText);
+    li.appendChild(editButton);
+    li.appendChild(removeButton);
 
-            taskList.appendChild(li);
-        }
+    taskList.appendChild(li);
+}
 
-        function editTask(li, index) {
-            const taskText = li.querySelector('span');
-            const taskInput = document.createElement('input');
-            taskInput.type = 'text';
-            taskInput.value = taskText.innerHTML.split('<br>')[0].trim();
+function editTask(li, index) {
+    const taskText = li.querySelector('span');
+    const taskInput = document.createElement('input');
+    taskInput.type = 'text';
+    taskInput.value = taskText.innerHTML.split('<br>')[0].trim();
 
-            const dateInput = document.createElement('input');
-            dateInput.type = 'date';
-            dateInput.value = taskText.innerHTML.split('<br>')[1].trim();
+    const dateInput = document.createElement('input');
+    dateInput.type = 'date';
+    dateInput.value = taskText.innerHTML.split('<br>')[1].trim();
 
-            const saveButton = document.createElement('button');
-            saveButton.textContent = 'Save';
-            saveButton.onclick = () => saveTask(li, index, taskInput.value, dateInput.value);
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Save';
+    saveButton.onclick = () => saveTask(li, index, taskInput.value, dateInput.value);
 
-            li.innerHTML = '';
-            li.appendChild(taskInput);
-            li.appendChild(dateInput);
-            li.appendChild(saveButton);
-        }
+    li.innerHTML = '';
+    li.appendChild(taskInput);
+    li.appendChild(dateInput);
+    li.appendChild(saveButton);
+}
 
-        function saveTask(li, index, updatedTask, updatedDate) {
-            let tasks = getTasksFromLocalStorage();
-            tasks[index] = { task: updatedTask, date: updatedDate };
-            localStorage.setItem('tasks', JSON.stringify(tasks));
-            li.innerHTML = `
-                <span>${updatedTask} <br> ${updatedDate}</span>
-                <edit-button onclick="editTask(this.parentElement, ${index})"><span class="material-symbols-outlined">edit_note</span>Edit</edit-button>
-                <button onclick="removeTask(this.parentElement, ${index})">Remove</button>
-            `;
-        }
+function saveTask(li, index, updatedTask, updatedDate) {
+    let tasks = getTasksFromLocalStorage();
+    tasks[index] = { task: updatedTask, date: updatedDate };
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    li.innerHTML = `
+        <span>${updatedTask} <br> ${updatedDate}</span>
+        <edit-button onclick="editTask(this.parentElement, ${index})"><span class="material-symbols-outlined">edit_note</span>Edit</edit-button>
+        <button onclick="removeTask(this.parentElement, ${index})">Remove</button>
+    `;
+}
 
-        function removeTask(li, index) {
-            let tasks = getTasksFromLocalStorage();
-            tasks.splice(index, 1);
-            localStorage.setItem('tasks', JSON.stringify(tasks));
-            li.remove();
-        }
+function removeTask(li, index) {
+    let confirmDelete = confirm("Are you sure you want to remove this task?");
+    
+    if (confirmDelete) {
+        let tasks = getTasksFromLocalStorage();
+        tasks.splice(index, 1);
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+        li.remove();
+        updateTaskCount(); // Update task count after removing a task
+    }
+}
 
-        function loadTasks() {
-            const tasks = getTasksFromLocalStorage();
-            tasks.forEach((task, index) => addTaskToDOM(task, index));
-        }
+function loadTasks() {
+    const tasks = getTasksFromLocalStorage();
+    tasks.forEach((task, index) => addTaskToDOM(task, index));
+    updateTaskCount(); // Update task count after loading tasks
+}
 
-        function getTasksFromLocalStorage() {
-            return JSON.parse(localStorage.getItem('tasks')) || [];
-        }
+function getTasksFromLocalStorage() {
+    return JSON.parse(localStorage.getItem('tasks')) || [];
+}
 
-        function clearInputs() {
-            document.getElementById('task-input').value = '';
-            document.getElementById('date-input').value = '';
-        }
+function clearInputs() {
+    document.getElementById('task-input').value = '';
+    document.getElementById('date-input').value = '';
+}
+
+function updateTaskCount() {
+    let listLength = document.querySelector(".list-length");
+    let tasks = document.querySelectorAll("#task-list li"); // Select all <li> elements (tasks) in task-list
+    listLength.innerText = `You have completed ${tasks.length} task${tasks.length !== 1 ? 's' : ''}.`;
+}
 
 
-
-
-// Greeting h1
+// ===================== Greeting ===============
 
 // Check if the name is already saved in localStorage
 let personName = localStorage.getItem('personName');
@@ -144,6 +155,7 @@ playPauseBtn.addEventListener('click', function () {
         playPauseBtn.innerHTML = `<span class="material-symbols-outlined">volume_off</span>`; // Change button text to "Play"
     }
 });
+
 
 // ================= Clear Data warning ==================
   function cleardata(){
@@ -208,3 +220,7 @@ function setInitialTaskListHeight() {
 // Call the setInitialTaskListHeight function when the page loads
 window.onload = setInitialTaskListHeight;
 
+let unavilableNotes = document.querySelectorAll('notesAddress');  
+  if(unavilableNotes == null){
+    unavilableNotes[0].style.color = 'red';
+}
