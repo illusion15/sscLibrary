@@ -1,71 +1,105 @@
 document.addEventListener('DOMContentLoaded', loadTasks);
-document.getElementById('add-task-button').addEventListener('click', addTask);
+        document.getElementById('add-task-button').addEventListener('click', addTask);
 
-function addTask() {
-    const taskInput = document.getElementById('task-input').value;
-    const dateInput = document.getElementById('date-input').value;
+        function addTask() {
+            const taskInput = document.getElementById('task-input').value;
+            const dateInput = document.getElementById('date-input').value;
 
-    if (taskInput === '' || dateInput === '') {
-        alert('Please enter subject, task and date');
-        return;
-    }
+            if (taskInput === '' || dateInput === '') {
+                alert('Please enter task and date');
+                return;
+            }
 
-    const task = {
-        task: taskInput,
-        date: dateInput,
-    };
+            const task = {
+                task: taskInput,
+                date: dateInput,
+            };
 
-    let tasks = getTasksFromLocalStorage();
-    tasks.push(task);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+            let tasks = getTasksFromLocalStorage();
+            tasks.push(task);
+            localStorage.setItem('tasks', JSON.stringify(tasks));
 
-    addTaskToDOM(task);
-    clearInputs();
-}
+            addTaskToDOM(task);
+            clearInputs();
+        }
 
-function addTaskToDOM(task) {
-    const taskList = document.getElementById('task-list');
+        function addTaskToDOM(task, index = null) {
+            const taskList = document.getElementById('task-list');
+            const li = document.createElement('li');
+            li.className = 'task-item';
 
-    const li = document.createElement('li');
-    li.className = 'task-item';
+            const taskText = document.createElement('span');
+            taskText.innerHTML = `${task.task} <br> ${task.date}`;
 
-    li.innerHTML = `
-        <span>${task.task} \n<br> ${task.date}</span>
-        <button onclick="removeTask(this)">Remove</button>
-    `;
+            const editButton = document.createElement('edit-button');
+            editButton.innerHTML = `<span class="material-symbols-outlined">edit_note</span>Edit`;
+            editButton.onclick = () => editTask(li, index);
 
-    taskList.appendChild(li);
-}
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = () => removeTask(li, index);
 
-function removeTask(button) {
-    const li = button.parentElement;
+            li.appendChild(taskText);
+            li.appendChild(editButton);
+            li.appendChild(removeButton);
 
-    let tasks = getTasksFromLocalStorage();
-    
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+            taskList.appendChild(li);
+        }
 
-    li.remove();
-}
+        function editTask(li, index) {
+            const taskText = li.querySelector('span');
+            const taskInput = document.createElement('input');
+            taskInput.type = 'text';
+            taskInput.value = taskText.innerHTML.split('<br>')[0].trim();
 
-function loadTasks() {
-    const tasks = getTasksFromLocalStorage();
-    tasks.forEach(task => addTaskToDOM(task));
-}
+            const dateInput = document.createElement('input');
+            dateInput.type = 'date';
+            dateInput.value = taskText.innerHTML.split('<br>')[1].trim();
 
-function getTasksFromLocalStorage() {
-    let tasks;
-    if (localStorage.getItem('tasks') === null) {
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'));
-    }
-    return tasks;
-}
+            const saveButton = document.createElement('button');
+            saveButton.textContent = 'Save';
+            saveButton.onclick = () => saveTask(li, index, taskInput.value, dateInput.value);
 
-function clearInputs() {
-    document.getElementById('task-input').value = '';
-    document.getElementById('date-input').value = '';
-}
+            li.innerHTML = '';
+            li.appendChild(taskInput);
+            li.appendChild(dateInput);
+            li.appendChild(saveButton);
+        }
+
+        function saveTask(li, index, updatedTask, updatedDate) {
+            let tasks = getTasksFromLocalStorage();
+            tasks[index] = { task: updatedTask, date: updatedDate };
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+            li.innerHTML = `
+                <span>${updatedTask} <br> ${updatedDate}</span>
+                <edit-button onclick="editTask(this.parentElement, ${index})"><span class="material-symbols-outlined">edit_note</span>Edit</edit-button>
+                <button onclick="removeTask(this.parentElement, ${index})">Remove</button>
+            `;
+        }
+
+        function removeTask(li, index) {
+            let tasks = getTasksFromLocalStorage();
+            tasks.splice(index, 1);
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+            li.remove();
+        }
+
+        function loadTasks() {
+            const tasks = getTasksFromLocalStorage();
+            tasks.forEach((task, index) => addTaskToDOM(task, index));
+        }
+
+        function getTasksFromLocalStorage() {
+            return JSON.parse(localStorage.getItem('tasks')) || [];
+        }
+
+        function clearInputs() {
+            document.getElementById('task-input').value = '';
+            document.getElementById('date-input').value = '';
+        }
+
+
+
 
 // Greeting h1
 
@@ -104,9 +138,73 @@ const playPauseBtn = document.getElementById('playPauseBtn');
 playPauseBtn.addEventListener('click', function () {
     if (audio.paused) {
         audio.play(); // Play the audio
-        playPauseBtn.innerHTML = '<span class="material-symbols-outlined">volume_up </span>'; // Change button text to "Pause"
+        playPauseBtn.innerHTML = '<span class="material-symbols-outlined">volume_up</span>'; // Change button text to "Pause"
     } else {
         audio.pause(); // Pause the audio
-        playPauseBtn.innerHTML = `<span class="material-symbols-outlined">pause_circle</span>`; // Change button text to "Play"
+        playPauseBtn.innerHTML = `<span class="material-symbols-outlined">volume_off</span>`; // Change button text to "Play"
     }
 });
+
+// ================= Clear Data warning ==================
+  function cleardata(){
+      let warn = prompt("Warning: It will erase your: \n(i) to-do tasks \n(ii) chapters completed checkbox. \n\nTo confirm that you want to delete, type: YES");
+    if (warn === "YES"){
+      localStorage.clear();
+    }else{
+      alert("Your data is safe");
+    }
+  }
+
+// ================= right click disabling code ==================
+
+  // Prevent copying using the clipboard event
+  document.addEventListener('copy', function (event) {
+      event.preventDefault();
+      alert("Copying is disabled on this website.");
+    });
+
+    // Disable right-click on the entire page
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+
+
+// ================= Code for subjectChoices onclick function ==================
+function goToLink() {
+      const selectElement = document.getElementById("subjectChoices");
+      const selectedValue = selectElement.value;
+      if (selectedValue) {
+          window.location.href = selectedValue; // Redirect to the selected link
+      }
+  }
+
+// ================= Code for resizing todo task list ==================
+    function resizeTaskList() {
+      const taskList = document.getElementById("task-list");
+
+      // Check the current height or use the stored height
+      if (taskList.style.height === "150px") {
+          taskList.style.height = "auto"; // Revert back to tdefault height
+          localStorage.setItem('task-list-height', 'auto');
+      } else {
+          taskList.style.height = "150px"; // Set height to 150px
+          localStorage.setItem('task-list-height', '150px');
+      }        
+    }
+
+    // Function to apply the saved height on page load
+function setInitialTaskListHeight() {
+    const taskList = document.getElementById("task-list");
+
+    // Retrieve the saved height from localStorage
+    const savedHeight = localStorage.getItem('task-list-height');
+
+    // Apply the saved height if it exists, otherwise leave it as default
+    if (savedHeight) {
+        taskList.style.height = savedHeight;
+    }
+}
+
+// Call the setInitialTaskListHeight function when the page loads
+window.onload = setInitialTaskListHeight;
+

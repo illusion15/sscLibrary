@@ -85,7 +85,26 @@ body {
   color: #8c81e9;
 
 }
-
+.recommended-tagged-lec{
+  background-color:rgb(255, 135, 91);
+  color:black;
+  padding:2px 10px;
+  width:min-content; 
+  font-size:.7em; 
+  font-weight:500; 
+  border-radius:10px; 
+  float:right;
+  animation: blink 1.5s infinite;
+  transition: all .3s;
+}
+@keyframes blink {
+  0%, 100%{
+    background-color: rgb(255, 135, 91) ;
+  }
+  50%{
+    background-color: transparent;
+  }
+}
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 640px) {
 .lectures-grid{

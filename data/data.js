@@ -109,6 +109,12 @@ const reasoning_dice_lectures = [
 ]
 const reasoning_calendar_lectures = [
   { 
+    id: '0013.1',
+    lecName: `Calendar (One Shot "in depth") <span class="recommended-tagged-lec">Recomended</span>`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/OQarroTPk-U?si=dVPjtRjUoZL6ERR0`,
+    notesAddress: null,
+  },
+  { 
     id: '0013',
     lecName: `Calendar`,
     lecAddress: `https://www.youtube-nocookie.com/embed/gCOshTqyFGo?si=jHoVt2LIawb23jdZ`,
@@ -132,6 +138,12 @@ const reasoning_revision_lectures = [
   },
 ]
 const reasoning_syllogism_lectures = [
+  { 
+    id: '0016.1',
+    lecName: `Syllogism (One Shot "in depth") <span class="recommended-tagged-lec">Recomended</span>`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/Fep4O4mU05E?si=QoUI5h-isepIQ9vm`,
+    notesAddress: null,
+  },
   { 
     id: '0016',
     lecName: `Syllogism Part-1`,

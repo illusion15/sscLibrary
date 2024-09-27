@@ -71,6 +71,7 @@ body{
   -webkit-text-fill-color: transparent;
   background-clip: text;
   box-shadow: 9px 9px 5px 3px greenyellow;
+  cursor: pointer;
 }
 .goto-ToDoApp:active{
   transform: translateX(10px) translateY(10px);
@@ -121,7 +122,7 @@ h1{
   text-align: center;
   border-radius: 40px ;
   outline: none;
-
+  cursor: pointer;
 }
 .chooseYourSub .option{
   font-size: 20px;
@@ -192,7 +193,6 @@ h1{
   padding: 0 10px;
   border-radius: 20px;
   box-shadow: inset 6px 6px 5px 5px rgb(59, 58, 58) ;
-  cursor: pointer;
 }
 .math-ch h2{
   font-size: 1.1em;
@@ -215,9 +215,6 @@ h1{
 .math-ch:hover .lec-play-btn{
   box-shadow: 1px 1px 5px 1px yellowgreen ;  
 }
-.math-ch:hover h2{
-  text-shadow: 3px 3px 5px orangered ;  
-}
 
 
 /* ================== todo list ====================== */
@@ -237,25 +234,32 @@ h1{
   justify-content: center;
 }
 #todoApp .todo-info{
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding-bottom: 90px;
+  margin: 0 0 0 0;
+  padding: 40px 20px;
+  background-color: #262d3a;
+  border-radius: 10px;
+  width: 60vw;
+  box-shadow: 16px 14px 20px #12161d;
+  margin-bottom: 90px;
+
 }
 .todo-container{
-  margin: 10vh 0 0 0;
-  background-color: #6269767a;
+  margin: 10vh 0 10px 0;
+  background-color: #262d3a;
   padding: 90px 20px 0 20px;
   border-radius: 10px;
+  box-shadow: 16px 14px 20px #12161d;
 }
 
 .todo-container h1 {
-  background-image: linear-gradient( #fff, #ff00d4 );
+  background-image: linear-gradient( #fff, yellowgreen );
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
   font-size: 4em;
   margin: 30px 0;
-  font-weight: 800;
+  font-weight: 900;
+  text-shadow: 16px 14px 10px #12161d;
 }
 
 .input-group {
@@ -263,7 +267,8 @@ h1{
   flex-direction: column;
   gap: 90px;
   margin-bottom: 70px;
-  justify-content: center;
+  justify-content: center;  
+
 }
 #task-input, #date-input{
   margin-bottom: 30px;
@@ -271,15 +276,13 @@ h1{
   padding: 40px 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  min-width: 100%;
-  background-color: #f4d3ee;
-
+  width: 100%;
+  background-color: #e2f2c3;
 }
 
 #add-task-button {
   padding: 20px 10px;
-  background: linear-gradient(to right, #5229f7, black, #5229f7 );
-  outline: auto rgb(47, 0, 255);
+  background: linear-gradient(to right,black, yellowgreen );
   color: white;
   border: none;
   border-radius: 25px;
@@ -287,11 +290,11 @@ h1{
   font-size: 3em;
   min-width: 100%;
   margin-bottom: 40px;
-
+  box-shadow: 16px 14px 20px #12161d;
 }
 
 #add-task-button:hover {
-  background: linear-gradient(to right, black,#5229f7, black );
+  background: linear-gradient(to right, black,yellowgreen, black );
 
 }
 
@@ -300,16 +303,13 @@ h1{
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  border-radius: 10px;
   padding: 15px 0 0 0;
   height: auto;
   align-items: center;
   justify-content: center;
   overflow: auto; /* To hide overflow content */
   transition: height 0.3s ease; /* Smooth transition effect */
-}
-#task-list li{
-  position: relative;
-  bottom: 100%;
 }
 .resizeTaskList{
   font-size: 1em;
@@ -322,16 +322,28 @@ h1{
   color: #f4d3ee;
 }
 .task-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  background-color: #d6eeca;
+  justify-content: flex-start;
+  background-color: #262d3a;
   padding: 20px;
+  color: #fff;
   margin-bottom: 10px;
   border-radius: 5px;
   font-size: 2em;
   width: 80vw;
   text-transform: capitalize;
+  gap: 10px;
+}
+.task-item input {
+  display: block;
+  height: 80%;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: #e2f2c3;
 }
 
 .task-item button {
@@ -348,7 +360,25 @@ h1{
 .task-item button:hover {
   background-color: #c82333;
 }
+
+edit-button {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 166, 255);
+  color: white;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  padding: 25px 15px;
+  cursor: pointer;
+  font-size: 1em;
+}
+edit-button span{
+  margin-right: 5px;
+}
 .clear-btn{
+  position: relative;
+  top: 20px;
   margin-top: 10vh;
   background-color: #c82333;
   color: rgb(255, 255, 0);
@@ -357,6 +387,8 @@ h1{
   border-radius: 10px;
   display: flex;
   align-items: center;
+  box-shadow: 0 5px 2px 2px #1c222d, 0 -5px 2px 5px #1c222d;
+  cursor: pointer;
 }
 .clear-btn span{
   font-size: 1.3em;
@@ -383,7 +415,10 @@ h1{
 .greeting-container, .goto-ToDoApp{
   top: 5%;
 }
-
+.audio-controls button {
+  border-radius: 50%;
+  padding: 5px 10px;
+}
 .choice-container{
   display: flex;
   align-items: center;

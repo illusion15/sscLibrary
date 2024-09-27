@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+   <!-- Placeholder for the header -->
+   <div id="header-placeholder"></div>
   <nav>
     <span onclick="gotToLandingPage()" class="material-symbols-outlined">arrow_back_ios</span>
     <h2 onclick="gotToLandingPage()" class="back-nav">Back</h2>
@@ -45,6 +47,17 @@
     }
 
   </script>
+<!-- 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('../nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  });
+</script> -->
 
 </body>
 </html>
