@@ -14,14 +14,18 @@
   </nav>
   <div class="topic-container">
     <div class="subject-card">
-      <header>
-        <h1 class="subject-heading">Reasoning</h1>
+      <header class="subject-header">
+        <h1 class="subject-heading">Reasoning
+          <div class="addNote">
+            <button class="addNoteBtn" onclick="openTextArea(this)">Add Note</button>
+            <textarea class="noteArea" placeholder="Here you can add note regarding this subject or these about specific chapters or specific lectures.. Inshort it will act as reminder."></textarea>
+          </div>
+        </h1>
       </header>
       <main class="chapters-grid">
 
         <div onclick="window.location.href='chapters/Announcement/index.html'" class="chapter-card">
           <h2 class="chapter-name">Announcement</h2>
-          <div class="videos-count-announcement"></div>
         </div>
         <div onclick="window.location.href='chapters/series/index.html'" class="chapter-card">
           <h2 class="chapter-name">Series (By Arun Sir)</h2>

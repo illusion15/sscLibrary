@@ -233,16 +233,6 @@ h1{
   text-align: center;
   justify-content: center;
 }
-#todoApp .todo-info{
-  margin: 0 0 0 0;
-  padding: 40px 20px;
-  background-color: #262d3a;
-  border-radius: 10px;
-  width: 60vw;
-  box-shadow: 16px 14px 20px #12161d;
-  margin-bottom: 90px;
-
-}
 .todo-container{
   margin: 10vh 0 10px 0;
   background-color: #262d3a;
@@ -289,6 +279,7 @@ h1{
   cursor: pointer;
   font-size: 3em;
   min-width: 100%;
+  margin-top: 10px;
   margin-bottom: 40px;
   box-shadow: 16px 14px 20px #12161d;
 }
@@ -308,8 +299,8 @@ h1{
   height: auto;
   align-items: center;
   justify-content: center;
-  overflow: auto; /* To hide overflow content */
-  transition: height 0.3s ease; /* Smooth transition effect */
+  overflow: auto; 
+  transition: height 0.3s ease; 
 }
 .resizeTaskList{
   font-size: 1em;
@@ -343,7 +334,7 @@ h1{
   border-radius: 5px;
   border: none;
   padding: 0 10px;
-  font-size: 18px;
+  font-size: 25px;
   background-color: #e2f2c3;
   max-width: 80vw;
   text-wrap: wrap;
@@ -401,6 +392,9 @@ edit-button span{
 }
 .list-length{
   color: #fff;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-top: 5px;
 }
 .drag-btn{
   cursor: grab;
@@ -409,6 +403,17 @@ edit-button span{
   right: 0;
   font-size: 5em;
 }
+.todo-info{
+  margin: 0 0 0 0;
+  padding: 40px 30px;
+  background-color: #262d3a;
+  border-radius: 10px;
+  width: 75vw;
+  box-shadow: 16px 14px 20px #12161d;
+  margin-bottom: 90px;
+
+}
+
 /* ================== media querry ====================== */
 
 /* For Mobile Portrait View */
@@ -454,7 +459,7 @@ edit-button span{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4d3ee;
+  background-color: #e2f2c3;
 }
 .ch-container{
   display: grid;
@@ -472,17 +477,17 @@ edit-button span{
   max-width: 50%;
 }
 .lec-play-btn{
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0 0 9px 0px yellowgreen, inset 0 0 9px 2px black;
+  box-shadow: 0 0 9px 5pxpx yellowgreen, inset 0 0 9px 5px black;
 }
 .lec-play-btn:active{
   transform: translateX(3px) translateY(3px);
 }
 .lec-play-btn span{
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 .goToHomePage, .goToMathPage{
