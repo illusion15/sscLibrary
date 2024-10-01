@@ -413,6 +413,19 @@ edit-button span{
   margin-bottom: 90px;
 
 }
+#quiz-btn {
+  padding: 10px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #8174f4;
+  font-weight: 600;
+}
+
+#quiz-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 
 /* ================== media querry ====================== */
 
@@ -501,7 +514,12 @@ edit-button span{
 .clear-btn{
   font-size: 1.5em;
 }
+#quiz-btn {
+  font-size: xx-large;
 }
+
+}
+
 /* ================For Desktop View ======= */
 @media screen and (min-width: 1024px) {
 #landing-page{
