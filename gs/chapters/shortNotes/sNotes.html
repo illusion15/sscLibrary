@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geography Short Notes</title>
+  <link rel="icon" href="https://cdn.pixabay.com/photo/2019/01/30/08/30/book-3964050_1280.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../../../parent css/chaptersStyle.css">
+  <link rel="stylesheet" href="../../../parent css/lectureStyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+.notes-card-container{
+  padding: 20px 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.notes-card{
+  padding: 20px 30px;
+  background-color: brown;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #8c81e9;
+  width: 90%;
+}
+.notes-card span{
+  margin-right: 10px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <span onclick="goToChaptersPage()" class="material-symbols-outlined">arrow_back_ios</span>
+    <h2 onclick="goToChaptersPage()" class="back-nav">Back</h2>
+  </nav>
+  <div class="topic-container">
+    <div class="subject-card">
+      <header>
+        <h1 class="subject-heading">Geography Short Notes</h1>
+      </header>
+
+      <main class="lectures-grid"></main>
+        <div class="notes-card-container">
+            <div onclick="window.location.href='../../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 short_notes.pdf'"; class="notes-card"><span class="material-symbols-outlined">picture_as_pdf</span>Geography Lecture 1 shortNotes</div>
+
+            <div onclick="window.location.href='../../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_2_short_notes.pdf'"; class="notes-card"><span class="material-symbols-outlined">picture_as_pdf</span>Geography Lecture 2 shortNotes</div>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="../../../parent script/lectureScript.js"></script>
+  <script>
+  function goToChaptersPage(){
+    window.location.href='../../index.html';
+  }
+  </script>
+</body>
+</html>

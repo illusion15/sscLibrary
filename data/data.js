@@ -631,33 +631,34 @@ const gs_allContent_lectures = [
     id: '0080',
     lecName: `Indian Classical Dance (शास्त्रीय नृत्य)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/2tEkjfq7ayQ?si=YaRZq4M4qIxNP2dx`,
-    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
   {
     id: '0081',
     lecName: `Folk Dance (लोक नृत्य)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/0pGAFRprdGA?si=EbE5rBraroC6l6EU`,
-    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
   {
     id: '0082',
     lecName: `Folk Dance (लोक नृत्य) Questions Practice`,
     lecAddress: `https://www.youtube-nocookie.com/embed/cXTC_aVEjhA?si=06sdUSLEHmgqHCQ7`,
-    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
+]
+const gs_Geo_lectures = [
   {
     id: '0083',
     lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
-    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
   {
     id: '0084',
     lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/Chc0A2NUv8Q?si=q6neB6N2F0QvYXOY`,
-    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_2_classnote.pdf`,
   },
 ]
-// const gk_PGK3_lectures = [
-// ]
 
+{/* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */}
