@@ -645,5 +645,19 @@ const gs_allContent_lectures = [
     lecAddress: `https://www.youtube-nocookie.com/embed/cXTC_aVEjhA?si=06sdUSLEHmgqHCQ7`,
     notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
+  {
+    id: '0083',
+    lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
+    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+  },
+  {
+    id: '0084',
+    lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/Chc0A2NUv8Q?si=q6neB6N2F0QvYXOY`,
+    notesAddress: `../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+  },
 ]
+// const gk_PGK3_lectures = [
+// ]
 
