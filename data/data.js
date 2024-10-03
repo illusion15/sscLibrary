@@ -649,16 +649,22 @@ const gs_allContent_lectures = [
 const gs_Geo_lectures = [
   {
     id: '0083',
-    lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
   {
     id: '0084',
-    lecName: `GEOGRAPHY FOR SSC EXAMS 2025 | LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
+    lecName: `LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/Chc0A2NUv8Q?si=q6neB6N2F0QvYXOY`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_2_classnote.pdf`,
   },
+  {
+    id: '0085',
+    lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
+    lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
+  },
 ]
 
-{/* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */}
+/* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */

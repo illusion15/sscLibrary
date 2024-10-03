@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Display PDF</title>
+  <style>
+.iframe-container{
+  padding: 30px 5vw;
+}    
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) 
+  and (orientation: portrait) {
+.iframe-container{
+  padding: 30px 5vw;
+}    
+
+}
+  </style>
   <script>
     window.onload = function() {
       // Get the PDF URL from the query string
@@ -11,9 +24,8 @@
       const pdfUrl = params.get('pdf');
 
       if (pdfUrl) {
-        // Use Google Docs Viewer to display the PDF in the iframe
-        const googleViewer = "https://docs.google.com/viewer?embedded=true&url=" + encodeURIComponent(pdfUrl);
-        document.getElementById('pdf-frame').src = googleViewer;
+        // Display the PDF in the iframe
+        document.getElementById('pdf-frame').src = pdfUrl;
         document.getElementById('pdf-link').href = pdfUrl;
       } else {
         document.getElementById('message').textContent = 'PDF file not found.';
@@ -22,11 +34,12 @@
   </script>
 </head>
 <body>
-  <h2>Welcome to the Library notes...</h2>
   <p id="message"></p>
 
-  <!-- Iframe to display the PDF using Google Docs Viewer -->
-  <iframe id="pdf-frame" width="100%" height="600px"></iframe>
+  <!-- Iframe to display the PDF -->
+   <div class="iframe-container">
+     <embed id="pdf-frame" width="100%" height="600px"></embed>
+   </div>
   
   <!-- Optional: a link for users to manually click the PDF if it doesn't load -->
   <p>If the PDF doesn't load, <a id="pdf-link" href="#">click here to open the PDF manually</a>.</p>
