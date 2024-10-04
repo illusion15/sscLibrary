@@ -674,6 +674,12 @@ const gs_Geo_lectures = [
     lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
   },
+  {
+    id: '0087',
+    lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
+    lecAddress: `https://t.me/PARMAR_SSC_GK_NEW_BATCH/3753`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
+  },
 ]
 
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
