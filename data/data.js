@@ -1,8 +1,8 @@
 
 function applyLectureInnerHtml(lectures){
   return `<div class="lecture-card">
-    <div class="iframe-container">
-    <iframe width="560" height="315" src="${lectures.lecAddress}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="iframe-container" >
+    <iframe id="player" width="560" height="315" src="${lectures.lecAddress}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <div class="lecture-info">
       <h4>${lectures.lecName}</h4>
@@ -646,21 +646,30 @@ const gs_allContent_lectures = [
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
 ]
-const gs_Geo_lectures = [
+
+const gs_History_lectures = [
   {
     id: '0083',
+    lecName: `7 घंटे में Complete History का निचोड़ (सम्पूर्ण इतिहास) || CGL & RRB में इस से बाहर नहीं पूछा जायेगा`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/VH6HqJsM560?si=y4BEEr2uFWV-Y6GW`,
+    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
+  },
+]
+const gs_Geo_lectures = [
+  {
+    id: '0084',
     lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
   {
-    id: '0084',
+    id: '0085',
     lecName: `LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/Chc0A2NUv8Q?si=q6neB6N2F0QvYXOY`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_2_classnote.pdf`,
   },
   {
-    id: '0085',
+    id: '0086',
     lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
     lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
     notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
