@@ -631,19 +631,19 @@ const gs_allContent_lectures = [
     id: '0080',
     lecName: `Indian Classical Dance (शास्त्रीय नृत्य)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/2tEkjfq7ayQ?si=YaRZq4M4qIxNP2dx`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
   {
     id: '0081',
     lecName: `Folk Dance (लोक नृत्य)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/0pGAFRprdGA?si=EbE5rBraroC6l6EU`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
   {
     id: '0082',
     lecName: `Folk Dance (लोक नृत्य) Questions Practice`,
     lecAddress: `https://www.youtube-nocookie.com/embed/cXTC_aVEjhA?si=06sdUSLEHmgqHCQ7`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
+    notesAddress: `../../gsNotes/01 Classical and folk dance/Classical and folk dances of India.pdf`,
   },
 ]
 
@@ -652,7 +652,7 @@ const gs_History_lectures = [
     id: '0083',
     lecName: `7 घंटे में Complete History का निचोड़ (सम्पूर्ण इतिहास) || CGL & RRB में इस से बाहर नहीं पूछा जायेगा`,
     lecAddress: `https://www.youtube-nocookie.com/embed/VH6HqJsM560?si=y4BEEr2uFWV-Y6GW`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
+    notesAddress: `../../gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
 ]
 const gs_Geo_lectures = [
@@ -660,26 +660,25 @@ const gs_Geo_lectures = [
     id: '0084',
     lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
+    notesAddress: `../../gsNotes/02_Geography/Lec_1_classnote.pdf`,
   },
   {
     id: '0085',
     lecName: `LATITUDE - LONGITUDE & ROTATION - REVOLUTION | LEC-2 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/Chc0A2NUv8Q?si=q6neB6N2F0QvYXOY`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_2_classnote.pdf`,
+    notesAddress: `../../gsNotes/02_Geography/Lec_2_classnote.pdf`,
   },
   {
     id: '0086',
     lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
     lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
-    notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
+    notesAddress: `../../../gsNotes/02_Geography/Lec_3_classnote.pdf`,
   },
-  // {
-  //   id: '0087',
-  //   lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
-  //   lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
-  //   notesAddress: `../../../pdf-redirect.html?pdf=gs/chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
-  // },
+  {
+    id: '0087',
+    lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
+    lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
+    notesAddress: `../../gsNotes/02_Geography/Lec_4_classnote.pdf`,
+  },
 ]
-
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
