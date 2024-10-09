@@ -177,7 +177,7 @@ const reasoning_NAS_lectures = [
 const reasoning_LA_lectures = [
   { 
     id: '0019',
-    lecName: `Letter Analogy`,
+    lecName: `Letter & Word Analogy`,
     lecAddress: `https://www.youtube-nocookie.com/embed/kn0sGyilV60?si=AlGItNAS65gaj_tx`,
     notesAddress: null,
   },
@@ -671,20 +671,32 @@ const gs_Geo_lectures = [
   {
     id: '0086',
     lecName: `EARTH'S INTERIOR & TECTONIC PLATE | LEC-3 | PARMAR SSC`,
-    lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
+    lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_3_classnote.pdf`,
   },
   {
     id: '0087',
     lecName: `ROCKS, CONTINETS & OCEANS | LEC-4 | PARMAR SSC`,
-    lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
+    lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_4_classnote.pdf`,
   },
   {
     id: '0088',
     lecName: `GEOMORPHOLOGY & LANDFORMS | LEC-5 | PARMAR SSC`,
-    lecAddress: `https://www.youtube.com/live/dSyFOkW9uwY`,
+    lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_5_classnote.pdf`,
+  },
+  {
+    id: '0089',
+    lecName: `ATMOSPHERE AND WATER IN ATMOSPHERE | LEC-6 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_6_classnote.pdf`,
+  },
+  {
+    id: '0090',
+    lecName: `WIND, CYCLONE AND OCEAN CURRENTS | LEC-7 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_7_classnote.pdf`,
   },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
