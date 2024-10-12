@@ -31,6 +31,20 @@ const reasoning_announcement_lectures = [
     notesAddress: `Reasoning syllabus.pdf`,
   },
 ]
+const reasoning_Fundamentals_of_Reasoning_lectures = [
+  { 
+    id: '0001.2',
+    lecName: `Alphabets को याद कैसे करें`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/UOaQP2TVxpE?si=NkOo0gzY1MUyIDX4`,
+    notesAddress: `...`,
+  },
+  { 
+    id: '0001.3',
+    lecName: `Opposite Letter को याद कैसे रखें`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/7hrOxVw-PvY?si=bVP6WUiJnjOE8cBQ`,
+    notesAddress: `...`,
+  },
+]
 
 const reasoning_series_lectures = [
   { 
@@ -362,27 +376,7 @@ const math_digitalSum_lectures = [
   },
   
 ]
-
-const math_numberSystem_lectures = [
-  { 
-    id: '0041',
-    lecName: `Number System Lec: 1`,
-    lecAddress: `https://www.youtube-nocookie.com/embed/I80183rrvZY?si=FyXGBbUSYh_zzmnC`,
-    notesAddress: `../../mathsNotes/16 Number System/01.pdf`,
-  },
-  { 
-    id: '0042',
-    lecName: `Number System Lec: 2`,
-    lecAddress: `https://www.youtube-nocookie.com/embed/oe4SLyTtkx0?si=iSgj13nAtG1MASVF`,
-    notesAddress: `../../mathsNotes/16 Number System/02.pdf`,
-  },
-  { 
-    id: '0043',
-    lecName: `Number System Lec: 3`,
-    lecAddress: `https://www.youtube-nocookie.com/embed/MEYeGkluOsc?si=3j_4Jx3EwcXHeUer`,
-    notesAddress: `../../mathsNotes/16 Number System/03.pdf`,
-  },
-]
+// id: 0041 to 0043 alloted to numberSystem
 
 const math_percentage_lectures = [
   { 
@@ -616,7 +610,248 @@ const math_compoundInterest_lectures = [
     notesAddress: `../../mathsNotes/08 Compound Interest/04.pdf`,
   },
 ]
+const math_average_lectures = [
+  { 
+    id: '0078.01',
+    lecName: `Average one shot (8hr: 26min) <span class="recommended-tagged-lec">Recomended</span>`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/I4NO0Nfj-Qg?si=HCPgmRn85QKINbwq`,
+    notesAddress: `..`,
+  },
+  { 
+    id: '0078.02',
+    lecName: `Average Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/bU4bY2mNoY4?si=U_BSGreWfgBoonZz`,
+    notesAddress: `../../mathsNotes/09 Average/01.pdf`,
+  },
+  { 
+    id: '0078.03',
+    lecName: `Average Lec-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/_4yibcVGI2M?si=1mOBBF3JtlOijtoV`,
+    notesAddress: `../../mathsNotes/09 Average/02.pdf`,
+  },
+  { 
+    id: '0078.04',
+    lecName: `Average Lec-3`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/8exFhCUwm3k?si=GUEjtg4wJ-Wb3k60`,
+    notesAddress: `../../mathsNotes/09 Average/03.pdf`,
+  },
+  { 
+    id: '0078.99',
+    lecName: `MOCK TEST`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/E30RYf6KtoQ?si=BlX433LtzwTbdAcy`,
+    notesAddress: ``,
+  },
+  { 
+    id: '0078.05',
+    lecName: `Average Lec-4`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/jlKS1zyx0e4?si=yFTLRAMhLa-ozKj6`,
+    notesAddress: `../../mathsNotes/09 Average/04.pdf`,
+  },
+  { 
+    id: '0078.06',
+    lecName: `Average Lec-5`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/KRxbHvyyogY?si=_WTVTB3VWmUm2sog`,
+    notesAddress: `../../mathsNotes/09 Average/05.pdf`,
+  },
+]
+const math_ratio_lectures = [
+  { 
+    id: '0078.07',
+    lecName: `Ratio Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/NrnHmcN4hRQ?si=kRFcfnk5rmGcsIuC`,
+    notesAddress: `../../mathsNotes/10 Ratio/01.pdf`,
+  },
+  { 
+    id: '0078.08',
+    lecName: `Ratio Lec-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/twUJMh2FHM4?si=_CCkUS0gA1OFZPs-`,
+    notesAddress: `../../mathsNotes/10 Ratio/02.pdf`,
+  },
+  { 
+    id: '0078.09',
+    lecName: `Ratio Lec-3`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/ltSjlILp4SA?si=5aAaZsSDoxmaQF-k`,
+    notesAddress: `../../mathsNotes/10 Ratio/03.pdf`,
+  },
+]
+const math_ages_lectures = [
+  { 
+    id: '0078.10',
+    lecName: `Ages Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/vTFebZTvv2w?si=RP-TAr4Dgr57alxZ`,
+    notesAddress: `../../mathsNotes/11 Ages/01.pdf`,
+  },
+]
+const math_partnership_lectures = [
+  { 
+    id: '0078.11',
+    lecName: `Partnership Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/2KKMymxq7zk?si=Gq7TgwUOHjbDBeZe`,
+    notesAddress: `../../mathsNotes/12 Partnership/01.pdf`,
+  },
+]
+const math_proportion_lectures = [
+  { 
+    id: '0078.12',
+    lecName: `Proportion Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/NsNBeNvDHVE?si=USe1FMVyAeDsIoZh`,
+    notesAddress: `../../mathsNotes/13 Proportion/01.pdf`,
+  },
+]
+const math_algebra_lectures = [
+  { 
+    id: '0078.13',
+    lecName: `Algebra Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/MI9ChRyshlk?si=6PXm3_xg2mS-Gmes`,
+    notesAddress: `../../mathsNotes/14 Algebra/01.pdf`,
+  },
+  { 
+    id: '0078.14',
+    lecName: `Algebra Lec-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/FERFAxALH9M?si=QjQNyyZ21n8ow0tS`,
+    notesAddress: `../../mathsNotes/14 Algebra/02.pdf`,
+  },
+  { 
+    id: '0078.15',
+    lecName: `Algebra Lec-3`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/lwO11lKt6VI?si=gZuco0qb3jkTDzsi`,
+    notesAddress: `../../mathsNotes/14 Algebra/03.pdf`,
+  },
+]
+const math_trignometry_lectures = [
+  { 
+  id: '0078.16',
+  lecName: `Trignometry Lec-1`,
+  lecAddress: `https://www.youtube-nocookie.com/embed/Ihu9WtyLOj0?si=kEWk-Tk74vH6Ah4R`,
+  notesAddress: `../../mathsNotes/15 Trignometry/01.pdf`,
+  },
+  { 
+  id: '0078.17',
+  lecName: `Trignometry Lec-2`,
+  lecAddress: `https://www.youtube-nocookie.com/embed/ivBhDxcJrfQ?si=zanNmIQLhHmLgo7f`,
+  notesAddress: `../../mathsNotes/15 Trignometry/02.pdf`,
+  },
+  { 
+  id: '0078.18',
+  lecName: `Trignometry Lec-3`,
+  lecAddress: `https://www.youtube-nocookie.com/embed/V-0Rl2OhOw4?si=jJfKnjfaP-g6Fx7k`,
+  notesAddress: `../../mathsNotes/15 Trignometry/03.pdf`,
+  },
+  { 
+  id: '0078.19',
+  lecName: `Trignometry Lec-4`,
+  lecAddress: `https://www.youtube-nocookie.com/embed/QFmkpwJ2b0I?si=_k6oCheZXU8DDSzH`,
+  notesAddress: `../../mathsNotes/15 Trignometry/04.pdf`,
+  },
+  { 
+  id: '0078.20',
+  lecName: `MOCK TEST`,
+  lecAddress: `https://www.youtube-nocookie.com/embed/ZYkBqwSUFXk?si=vCZsQhTMLS1RKrh_`,
+  notesAddress: ``,
+  },
+]
+const math_numberSystem_lectures = [
+  { 
+    id: '0041',
+    lecName: `Number System Lec: 1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/I80183rrvZY?si=FyXGBbUSYh_zzmnC`,
+    notesAddress: `../../mathsNotes/16 Number System/01.pdf`,
+  },
+  { 
+    id: '0042',
+    lecName: `Number System Lec: 2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/oe4SLyTtkx0?si=iSgj13nAtG1MASVF`,
+    notesAddress: `../../mathsNotes/16 Number System/02.pdf`,
+  },
+  { 
+    id: '0043',
+    lecName: `Number System Lec: 3`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/MEYeGkluOsc?si=3j_4Jx3EwcXHeUer`,
+    notesAddress: `../../mathsNotes/16 Number System/03.pdf`,
+  },
+]
+const math_LCMandHCF_lectures = [
+  { 
+    id: '0078.21',
+    lecName: `HCF and LCM`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/OxOAeP3Xjc0?si=NgTIp7l4OUk-9yh9`,
+    notesAddress: `../../mathsNotes/17 LCM and HCF/01.pdf`,
+  },
+]
+const math_Geometry_lectures = [
+  { 
+    id: '0078.22',
+    lecName: `Geometry Lec-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/ozvaG4rwJJI?si=jdWPzKJLxaKOY-GF`,
+    notesAddress: `../../mathsNotes/18 Geometry/01.pdf`,
+  },
+  { 
+    id: '0078.23',
+    lecName: `Geometry Lec-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/z5h3X3ke7E0?si=1p6-qbSBz36cGCQ7`,
+    notesAddress: `../../mathsNotes/18 Geometry/02.pdf`,
+  },
+  { 
+    id: '0078.24',
+    lecName: `Geometry Lec-3`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/qhr86lhQtV4?si=VaIAJ9K1ePOOt4Xo`,
+    notesAddress: `../../mathsNotes/18 Geometry/03.pdf`,
+  },
+  { 
+    id: '0078.25',
+    lecName: `Geometry Lec-4`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/EbEVcqCkSz8?si=B_RspEy6AS8rHRCB`,
+    notesAddress: `../../mathsNotes/18 Geometry/04.pdf`,
+  },
+  { 
+    id: '0078.26',
+    lecName: `MOCK TEST`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/iTDqvipfnoM?si=yWQFB5rA1PM9GYdq`,
+    notesAddress: `../../mathsNotes/18 Geometry/DAY 32 MOCK TEST 02 (60 Days 60 Marathon).pdf`,
+  },
+]
+const math_mensuration2D_lectures = [
+  { 
+    id: '0078.27',
+    lecName: `Mensuration 2D Lec-1 (Triangle)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/SQh5osKPLQA?si=9dSWgTSbn1qnItUS`,
+    notesAddress: `../../mathsNotes/19 Mensuration 2D/01.pdf`,
+  },
+  { 
+    id: '0078.28',
+    lecName: `Mensuration 2D Lec-2 (Circle)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/TsIzzF1ueHg?si=5-65JWUGIJKchPHb`,
+    notesAddress: `../../mathsNotes/19 Mensuration 2D/02.pdf`,
+  },
+  { 
+    id: '0078.29',
+    lecName: `Mensuration 2D Lec-3 (Quadrilateral)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/xkOz3r_dgsc?si=7tKp2jLqHyoV3H9q`,
+    notesAddress: `../../mathsNotes/19 Mensuration 2D/03.pdf`,
+  },
+  { 
+    id: '0078.30',
+    lecName: `SAMPLE PAPER`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/xZobm21ovcM?si=SKoljFHZcxgnfgwD`,
+    notesAddress: ``,
+  },
+]
+const math_mensuration3D_lectures = [
+  { 
+    id: '0078.31',
+    lecName: `Mensuration 3D Lec-1 (Sphere)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/umd-m08t_JU?si=ROyUe5H69C6nTFo1`,
+    notesAddress: `../../mathsNotes/20 Mensuration 3D/01 (sphere).pdf`,
+  },
+  { 
+    id: '0078.32',
+    lecName: `Mensuration 3D Lec-2 (Cone)`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/SKpycNIqF_Q?si=exwwRffemYGQxpsg`,
+    notesAddress: `../../mathsNotes/20 Mensuration 3D/02 (cone).pdf`,
+  },
+]
 
+// ============================= ENGLISH ==================================
 const english_allContent_lectures = [
   { 
     id: '0079',

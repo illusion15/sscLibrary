@@ -32,6 +32,7 @@ nav{
   padding-left: 16px;
   height: 68px;
   box-shadow: 0 3px 10px #0000001a;
+  z-index: 999;
 }
 .back-nav{
   font-weight: 500;
@@ -61,9 +62,6 @@ nav{
   padding: 0 15px;
   gap: 15px;
 }
-.chapter-card:first-child{
-  background-color: #dcd8f8;
-}
 
 .chapter-card{
   color: black;
@@ -83,10 +81,10 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 999;
+  /* z-index: ; */
 }
 .noteArea{
-  color: #8c81e9;
+  color: #8c81e9; 
   font-weight: 600;
   display: none;
   border-radius: 5px;

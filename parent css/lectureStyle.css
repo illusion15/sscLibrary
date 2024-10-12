@@ -52,6 +52,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
+  background-color: antiquewhite;
 }
 .lecture-info{
   padding: 5px 15px;

@@ -1,7 +1,4 @@
-const elementsWithClassAndOnclick = document.querySelectorAll('.chapter-card[onclick]');
-elementsWithClassAndOnclick.forEach(element => {
-  element.style.backgroundColor = '#dcd8f8';
-});
+
 
 // Get the unique identifier for the current page (use a page-specific identifier, e.g., the page's filename or ID)
 const pageId = window.location.pathname; // This will return something like '/page1.html'

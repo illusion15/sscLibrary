@@ -323,10 +323,13 @@ h1{
   margin-bottom: 10px;
   border-radius: 5px;
   font-size: 2em;
-  max-width: 80vw;
+  width: 80vw;
   text-wrap: wrap;
   text-transform: capitalize;
   gap: 10px;
+}
+.task-item:hover {
+  background-color:#434852;
 }
 .task-item input {
   display: block;
@@ -414,7 +417,7 @@ edit-button span{
 
 }
 #quiz-btn {
-  padding: 10px 30px;
+  padding: 20px 30px;
   margin-top: 20px;
   border: none;
   border-radius: 5px;
