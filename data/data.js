@@ -933,5 +933,17 @@ const gs_Geo_lectures = [
     lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_7_classnote.pdf`,
   },
+  {
+    id: '0090',
+    lecName: `INDIA AND IT'S LOCATION | LEC-8 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_8_classnote.pdf`,
+  },
+  {
+    id: '0090',
+    lecName: `HIMALAYAS | LEC-9 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_9_classnote.pdf`,
+  },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
