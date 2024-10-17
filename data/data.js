@@ -945,5 +945,11 @@ const gs_Geo_lectures = [
     lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_9_classnote.pdf`,
   },
+  {
+    id: '0091',
+    lecName: `PENINSULAR PLATEAUS | LEC-10 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_10_classnote.pdf`,
+  },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
