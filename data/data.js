@@ -951,5 +951,17 @@ const gs_Geo_lectures = [
     lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_10_classnote.pdf`,
   },
+  {
+    id: '0092',
+    lecName: `NORTHERN PLAINS & ISLANDS | LEC-11 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_11_classnote.pdf`,
+  },
+  {
+    id: '0093',
+    lecName: `RIVER SYSTEM | LEC-12 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_12_classnote.pdf`,
+  },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
