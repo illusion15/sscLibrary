@@ -892,12 +892,6 @@ const gs_History_lectures = [
 ]
 const gs_Geo_lectures = [
   {
-    id: 'geo_00',
-    lecName: `GEOGRAPHY COMPLETE NOTES | PARMAR GK BATCH 3.0 | PARMAR SSC`,
-    lecAddress: `../../chapters/gsNotes/02_Geography/Geography Complete English Notes.pdf`,
-    notesAddress: `../../chapters/gsNotes/02_Geography/Geography Complete English Notes.pdf`,
-  },
-  {
     id: '0084',
     lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
