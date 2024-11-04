@@ -892,6 +892,12 @@ const gs_History_lectures = [
 ]
 const gs_Geo_lectures = [
   {
+    id: 'geo_00',
+    lecName: `GEOGRAPHY COMPLETE NOTES | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecAddress: `../../chapters/gsNotes/02_Geography/Geography Complete English Notes.pdf`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Geography Complete English Notes.pdf`,
+  },
+  {
     id: '0084',
     lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
@@ -1009,7 +1015,21 @@ const gs_Geo_lectures = [
     id: '0101',
     lecName: `NATIONAL PARKS AND BIOSPHERE RESERVES | LEC-20 | PARMAR SSC`,
     lecAddress: `https://www.youtube-nocookie.com/embed/fxqsEl08uU8?si=5r4TUHZZRlvOrvOk`,
-    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_20_classnote.pdf`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_20_NATIONAL_PARKS_classnotes.pdf`,
+  },
+]
+const gs_Polity_lectures = [
+  {
+    id: 'polity_01',
+    lecName: `MAKING OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecAddress: ``,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_01_MAKING_OF_CONSTITUTION_classnotes.pdf`,
+  },
+  {
+    id: 'polity_02',
+    lecName: `<span class="recommended-tagged-lec">Tommorrow</span><br><br> SALIENT FEATURES OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/5THUMzh-xUI?si=lh6vLFOokrZIBYbI`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
   },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
