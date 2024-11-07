@@ -1021,9 +1021,15 @@ const gs_Polity_lectures = [
   },
   {
     id: 'polity_02',
-    lecName: `<span class="recommended-tagged-lec">Tommorrow</span><br><br> SALIENT FEATURES OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `SALIENT FEATURES OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC `,
     lecAddress: `https://www.youtube-nocookie.com/embed/5THUMzh-xUI?si=lh6vLFOokrZIBYbI`,
-    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_02_SALIENT_FEATURES_OF_CONSTITUTION_classnotes.pdf`,
+  },
+  {
+    id: 'polity_03',
+    lecName: `PREAMBLE (PART-1 & 2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/5THUMzh-xUI?si=lh6vLFOokrZIBYbI`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_03_PREAMBLE_PART_1&2_classnotes.pdf`,
   },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
