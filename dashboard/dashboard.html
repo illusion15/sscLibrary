@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">My Courses</a>
+      <a href="#">Progress</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Welcome, [User Name]</h1>
+      <div class="greeting-container">
+        <h1 class="greeting"></h1>      
+      </div>
+  
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="overview">
+      <h2>Your Courses</h2>
+      <div class="courses" id="courses">
+        <!-- JavaScript will populate this -->
+      </div>
+    </section>
+
+    <section class="progress">
+      <h2>Course Progress</h2>
+      <div id="progress-chart">
+        <!-- Progress visualization -->
+      </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+  <script src="../parent script/script.js"></script>
+</body>
+</html>

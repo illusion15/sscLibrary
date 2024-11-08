@@ -1016,19 +1016,19 @@ const gs_Polity_lectures = [
   {
     id: 'polity_01',
     lecName: `MAKING OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC`,
-    lecAddress: ``,
+    lecAddress: `https://www.youtube-nocookie.com/embed/4hX9uIp5VEc?si=YNfVA9s_54h76PEr`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_01_MAKING_OF_CONSTITUTION_classnotes.pdf`,
   },
   {
     id: 'polity_02',
     lecName: `SALIENT FEATURES OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC `,
-    lecAddress: `https://www.youtube-nocookie.com/embed/5THUMzh-xUI?si=lh6vLFOokrZIBYbI`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/y2Ps0J6uM20?si=CMAucYfy3ODmepJn`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_02_SALIENT_FEATURES_OF_CONSTITUTION_classnotes.pdf`,
   },
   {
     id: 'polity_03',
     lecName: `PREAMBLE (PART-1 & 2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
-    lecAddress: `https://www.youtube-nocookie.com/embed/5THUMzh-xUI?si=lh6vLFOokrZIBYbI`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/9Fz3vgW-4fw?si=aYRKBXodBkk3Ym0K`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_03_PREAMBLE_PART_1&2_classnotes.pdf`,
   },
 ]
