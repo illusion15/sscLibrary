@@ -353,7 +353,7 @@ const reasoning_bloodRelation_lectures = [
 ]
 const reasoning_clock_lectures = [
   { 
-    id: '0038.1',
+    id: '0038.3',
     lecName: `Clock`,
     lecAddress: `https://www.youtube-nocookie.com/embed/LS-VmcadNw8?si=vszfqXcv06QzndTI`,
     notesAddress: null,
@@ -361,6 +361,20 @@ const reasoning_clock_lectures = [
 ]
 // Mathematics =========================================
 
+const math_basics_lectures = [
+  { 
+    id: 'BM01',
+    lecName: `Square Tricks part-1`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/HcadyRMpjxA?si=RSdSqb2St9Ao2t0G`,
+    notesAddress: null,
+  },
+  { 
+    id: 'BM02',
+    lecName: `Square Tricks part-2`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/neLLV7GMHxI?si=uZ1N3d9jRGopVN0y`,
+    notesAddress: null,
+  },
+]
 const math_digitalSum_lectures = [
   { 
     id: '0039',
@@ -1030,6 +1044,42 @@ const gs_Polity_lectures = [
     lecName: `PREAMBLE (PART-1 & 2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
     lecAddress: `https://www.youtube-nocookie.com/embed/9Fz3vgW-4fw?si=aYRKBXodBkk3Ym0K`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_03_PREAMBLE_PART_1&2_classnotes.pdf`,
+  },
+  {
+    id: 'polity_04',
+    lecName: `FUNDAMENTAL RIGHT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/Dev5Mbbj3MA?si=EjO_UI0v22OPMrME`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_04_Fundamental_Rights_classnotes.pdf`,
+  },
+  {
+    id: 'polity_05',
+    lecName: `DPSP & FUNDAMENTAL DUTIES | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/2Bwj9i5jB6I?si=PhgcKp0dDV37IPGS`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_05_DPSP_&_FUNDAMENTAL_DUTIES_classnotes.pdf`,
+  },
+  {
+    id: 'polity_06',
+    lecName: `PRESIDENT AND VICE PRESIDENT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/XWv-CmTur1s?si=o275NMQv1OC-oOhS`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_06_PRESIDENT_AND_VICE_PRESIDENT_classnotes.pdf`,
+  },
+  {
+    id: 'polity_07',
+    lecName: `PRIME MINISTER & COUNCIL OF MINISTERS | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/IYUUxKGBFGc?si=yPca6DI6tf6mLt1u`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_07_PRIME_MINISTER_&_COUNCIL_OF_MINISTERS_classnotes.pdf`,
+  },
+  {
+    id: 'polity_08',
+    lecName: `PARLIAMENT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/b7hB3GQRkDo?si=VW7kXccybFKntqLS`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+  {
+    id: 'polity_09',
+    lecName: `PARLIAMENT(PART-2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/8xoa34Wb1UY?si=O5QooG4pjDGj9dHS`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
   },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */
