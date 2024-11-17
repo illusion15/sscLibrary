@@ -898,10 +898,28 @@ const gs_allContent_lectures = [
 
 const gs_History_lectures = [
   {
-    id: '0083',
-    lecName: `7 घंटे में Complete History का निचोड़ (सम्पूर्ण इतिहास) || CGL & RRB में इस से बाहर नहीं पूछा जायेगा`,
+    id: 'history_01',
+    lecName: `<span class="recommended-tagged-lec">Old_video</span> <br> 7 घंटे में Complete History का निचोड़ (सम्पूर्ण इतिहास)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/VH6HqJsM560?si=y4BEEr2uFWV-Y6GW`,
-    notesAddress: `../../chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
+  },
+  {
+    id: 'history_02',
+    lecName: `4 घंटे में Complete Ancient History का निचोड़`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/qeZYfiWbiIo?si=JimhZ7ckRb7qO4zz`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
+  },
+  {
+    id: 'history_03',
+    lecName: `3 घंटे में Complete Medieval History का निचोड़`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/dRW2Cl2Jy3s?si=9ZpS9KDeG8bvwx_3`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
+  },
+  {
+    id: 'history_04',
+    lecName: `3 घंटे में Complete MODERN HISTORY का निचोड़`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/4rtVAINPR_8?si=sWyfYrDHdn9g7yE3`,
+    notesAddress: `../../chapters/gsNotes/02_Geography/e.pdf`,
   },
 ]
 const gs_Geo_lectures = [
