@@ -1091,19 +1091,19 @@ const gs_Polity_lectures = [
     id: 'polity_08',
     lecName: `LEC-08 PARLIAMENT`,
     lecAddress: `https://www.youtube-nocookie.com/embed/b7hB3GQRkDo?si=VW7kXccybFKntqLS`,
-    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_08_PARLIAMENT_1_classnotes.pdf`,
   },
   {
     id: 'polity_09',
     lecName: `LEC-09 PARLIAMENT(PART-2)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/8xoa34Wb1UY?si=O5QooG4pjDGj9dHS`,
-    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_09_PARLIAMENT_2_classnotes.pdf`,
   },
   {
     id: 'polity_010',
     lecName: `LEC-10 STATE LEGISLATURE (PART VI) OF CONSTITUTION`,
     lecAddress: `https://www.youtube-nocookie.com/embed/m6a6tLUC6VI?si=Joei1IcOSpYM3adT`,
-    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_10_STATE_LEGISLATURE_classnotes.pdf`,
   },
   {
     id: 'polity_011',
@@ -1121,7 +1121,7 @@ const gs_Polity_lectures = [
     id: 'polity_013',
     lecName: `LEC-13 PANCHAYAT & MUNICIPALITIES`,
     lecAddress: `https://www.youtube-nocookie.com/embed/EXdW9W6_rVY?si=8cXCEo1v8ZR_LbbM`,
-    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/Lec_13_PANCHAYAT_&_MUNICIPALITIES_classnotes.pdf`,
   },
 ]
 const chem_iupac_lectures = [
