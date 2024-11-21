@@ -925,7 +925,7 @@ const gs_History_lectures = [
 const gs_Geo_lectures = [
   {
     id: '0084',
-    lecName: `SOLAR SYSTEM LEC-1 | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecName: `SOLAR SYSTEM LEC-1`,
     lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=UeNE5bT9f5yLa2gf`,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
@@ -1047,57 +1047,163 @@ const gs_Geo_lectures = [
 const gs_Polity_lectures = [
   {
     id: 'polity_01',
-    lecName: `MAKING OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC`,
+    lecName: `LEC-01 MAKING OF CONSTITUTION`,
     lecAddress: `https://www.youtube-nocookie.com/embed/4hX9uIp5VEc?si=YNfVA9s_54h76PEr`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_01_MAKING_OF_CONSTITUTION_classnotes.pdf`,
   },
   {
     id: 'polity_02',
-    lecName: `SALIENT FEATURES OF CONSTITUTION | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-02 SALIENT FEATURES OF CONSTITUTION`,
     lecAddress: `https://www.youtube-nocookie.com/embed/y2Ps0J6uM20?si=CMAucYfy3ODmepJn`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_02_SALIENT_FEATURES_OF_CONSTITUTION_classnotes.pdf`,
   },
   {
     id: 'polity_03',
-    lecName: `PREAMBLE (PART-1 & 2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-03 PREAMBLE (PART-1 & 2)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/9Fz3vgW-4fw?si=aYRKBXodBkk3Ym0K`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_03_PREAMBLE_PART_1&2_classnotes.pdf`,
   },
   {
     id: 'polity_04',
-    lecName: `FUNDAMENTAL RIGHT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-04 FUNDAMENTAL RIGHT`,
     lecAddress: `https://www.youtube-nocookie.com/embed/Dev5Mbbj3MA?si=EjO_UI0v22OPMrME`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_04_Fundamental_Rights_classnotes.pdf`,
   },
   {
     id: 'polity_05',
-    lecName: `DPSP & FUNDAMENTAL DUTIES | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-05 DPSP & FUNDAMENTAL DUTIES`,
     lecAddress: `https://www.youtube-nocookie.com/embed/2Bwj9i5jB6I?si=PhgcKp0dDV37IPGS`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_05_DPSP_&_FUNDAMENTAL_DUTIES_classnotes.pdf`,
   },
   {
     id: 'polity_06',
-    lecName: `PRESIDENT AND VICE PRESIDENT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-06 PRESIDENT AND VICE PRESIDENT`,
     lecAddress: `https://www.youtube-nocookie.com/embed/XWv-CmTur1s?si=o275NMQv1OC-oOhS`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_06_PRESIDENT_AND_VICE_PRESIDENT_classnotes.pdf`,
   },
   {
     id: 'polity_07',
-    lecName: `PRIME MINISTER & COUNCIL OF MINISTERS | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-07 PRIME MINISTER & COUNCIL OF MINISTERS`,
     lecAddress: `https://www.youtube-nocookie.com/embed/IYUUxKGBFGc?si=yPca6DI6tf6mLt1u`,
     notesAddress: `../../chapters/gsNotes/03_Polity/Lec_07_PRIME_MINISTER_&_COUNCIL_OF_MINISTERS_classnotes.pdf`,
   },
   {
     id: 'polity_08',
-    lecName: `PARLIAMENT | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-08 PARLIAMENT`,
     lecAddress: `https://www.youtube-nocookie.com/embed/b7hB3GQRkDo?si=VW7kXccybFKntqLS`,
     notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
   },
   {
     id: 'polity_09',
-    lecName: `PARLIAMENT(PART-2) | PARMAR GK BATCH 3.0 | PARMAR SSC `,
+    lecName: `LEC-09 PARLIAMENT(PART-2)`,
     lecAddress: `https://www.youtube-nocookie.com/embed/8xoa34Wb1UY?si=O5QooG4pjDGj9dHS`,
     notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+  {
+    id: 'polity_010',
+    lecName: `LEC-10 STATE LEGISLATURE (PART VI) OF CONSTITUTION`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/m6a6tLUC6VI?si=Joei1IcOSpYM3adT`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+  {
+    id: 'polity_011',
+    lecName: `LEC-11 AMENDMENTS, EMERGENCY & PARLIAMENTARY COMMITTEE`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/ZzFpANMh4No?si=W34oCWunOWbjvIm_`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+  {
+    id: 'polity_012',
+    lecName: `LEC-12 SUPREME COURT & HIGH COURT `,
+    lecAddress: `https://www.youtube-nocookie.com/embed/fc3joi7U9R0?si=fJHUMBXsu5fHVOUP`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+  {
+    id: 'polity_013',
+    lecName: `LEC-13 PANCHAYAT & MUNICIPALITIES`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/EXdW9W6_rVY?si=8cXCEo1v8ZR_LbbM`,
+    notesAddress: `../../chapters/gsNotes/03_Polity/.pdf`,
+  },
+]
+const chem_iupac_lectures = [
+  {
+    id: 'chem_01',
+    lecName: `Nomenclature One Shot | NEET 2025 Crash Course | 2 SHOT Series | Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/QBq8SsUhZvw?si=OpiNEE4YI2Dwx2GF`,
+    notesAddress: `../../chapters/chemNotes/01_Nomenclature.pdf`,
+  },
+]
+const chem_isomerism_lectures = [
+  {
+    id: 'chem_02',
+    lecName: `Isomerism in Organic Chemistry -1 | YouTube Crash Course | 2 SHOT series by Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/Kowk3vn3DCA?si=W3ve5GWLzWAy6ck7`,
+    notesAddress: `../../chapters/chemNotes/02_Isomerism_Part_1.pdf`,
+  },
+  {
+    id: 'chem_03',
+    lecName: `Isomerism - 2 | NEET 2025 | YouTube Crash Course | 2 SHOT Series by Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/JtO8E9YcVGY?si=xQun22xIp85VOkWU`,
+    notesAddress: `../../chapters/chemNotes/02_Isomerism_Part_2.pdf`,
+  },
+]
+const chem_goc_lectures = [
+  {
+    id: 'chem_04',
+    lecName: `GOC Chemistry Class 11 | Part - 1 | NEET 2025 Crash course | 2 SHOT Series by Nitesh Sir`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/khZfzfKcLIg?si=c_7ZC2RzGiQ6UlpA`,
+    notesAddress: `../../chapters/chemNotes/03_GOC_Part_1.pdf`,
+  },
+  {
+    id: 'chem_05',
+    lecName: `GOC Chemistry Class 11 | Part -2 | NEET 2025 Crash Course | 2 SHOT Series | Nitesh Devnani Sir`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/S4ADfSqkstI?si=BnKaXtjIbjgFHz8B`,
+    notesAddress: `../../chapters/chemNotes/03_GOC_Part_2.pdf`,
+  },
+  {
+    id: 'chem_06',
+    lecName: `GOC Chemistry Class 11 | Part -3 | NEET 2025 Crash Course | 2 SHOT Series | Nitesh Devnani Sir`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/wltIIpIW2C0?si=57_qAUw7XRIPhN4U`,
+    notesAddress: `../../chapters/chemNotes/03_GOC_Part_3.pdf`,
+  },
+  {
+    id: 'chem_07',
+    lecName: `GOC - Question Practice Session | Organic Chemistry | NEET 2025 | Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/O4bG5vT0ebE?si=6nhSy32ku6D5Mtmc`,
+    notesAddress: `../../chapters/chemNotes/03_Practice Session_GOC.pdf`,
+  },
+]
+const chem_hydrocarbon_lectures = [
+  {
+    id: 'chem_08',
+    lecName: `Hydrocarbons Alkanes Class 11| NEET 2025 Crash Course | 2 SHOT Series | Nitesh Devnani Sir`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/zKN1YXxAzmw?si=B7d0cBxpMH8l_enl`,
+    notesAddress: `../../chapters/chemNotes/04_Hydrocarbon_part_1.pdf`,
+  },
+  {
+    id: 'chem_09',
+    lecName: `Hydrocarbons Alkenes Class 11(Part -2)| NEET 2025 Crash Course | 2 SHOT Series | Nitesh Devnani Sir`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/uq7FbtUE2d8?si=oE4byoN1lM881mLY`,
+    notesAddress: `../../chapters/chemNotes/04_Hydrocarbon_part_2.pdf`,
+  },
+  {
+    id: 'chem_10',
+    lecName: `Hydrocarbons Alkynes Aromatic | 2 SHOT Series | Crash Course NEET 2025 | Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/ir7T-rxDrBg?si=YA9MPJgrBU_BhVHH`,
+    notesAddress: `../../chapters/chemNotes/04_Hydrocarbon_part_3.pdf`,
+  },
+]
+const chem_haloalkane_lectures = [
+  {
+    id: 'chem_11',
+    lecName: `Haloalkanes and Haloarenes Class 12 | PART 1 | 2 SHOT Series | NEET 2025 | Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/qOcOLvnPEiY?si=gens7bMSBMZfWHy_`,
+    notesAddress: `../../chapters/chemNotes/05_Haloalkanes_Part_1.pdf`,
+  },
+  {
+    id: 'chem_12',
+    lecName: `Haloalkanes and Haloarenes Class 12 | PART 2 | 2 SHOT Series | NEET 2025 | Nitesh Devnani`,
+    lecAddress: `https://www.youtube-nocookie.com/embed/E0qSuagCX_g?si=P2Q9FzvVPwyzZIkQ`,
+    notesAddress: `../../chapters/chemNotes/05_Haloalkanes_Part_2.pdf`,
   },
 ]
 /* <a href="/pdf-redirect.html?pdf=../gsNotes/02%20Geography/Lec_2%20classnote.pdf">Open PDF</a> */

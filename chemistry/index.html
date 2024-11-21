@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry</title>
+  <link rel="stylesheet" href="../parent css/chaptersStyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <nav>
+    <span onclick="gotToLandingPage()" class="material-symbols-outlined">arrow_back_ios</span>
+    <h2 onclick="gotToLandingPage()" class="back-nav">Back</h2>
+  </nav>
+  <div class="topic-container">
+    <div class="subject-card">
+      <header>
+        <h1 class="subject-heading">Chemistry
+          <div class="addNote">
+            <button class="addNoteBtn" onclick="openTextArea(this)">Add Note</button>
+            <textarea class="noteArea" placeholder="Here you can add note regarding this subject or about these specific chapters/lectures..."></textarea>
+          </div>
+    
+        </h1>
+      </header>
+      <main class="chapters-grid">
+
+        <div onclick="window.location.href='chapters/01_iupac/index.html'" class="chapter-card">
+          <h2 class="chapter-name">IUPAC Nomenclature</h2>
+        </div>
+
+        <div onclick="window.location.href='chapters/02_isomerism/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Isomerism</h2>
+        </div>
+
+        <div onclick="window.location.href='chapters/03_goc/index.html'" class="chapter-card">
+          <h2 class="chapter-name">GOC</h2>
+        </div>
+
+        <div onclick="window.location.href='chapters/04_hydrocarbon/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Hydrocarbon</h2>
+        </div>
+
+        <div onclick="window.location.href='chapters/05_haloalkane/index.html'" class="chapter-card">
+          <h2 class="chapter-name">Haloalkane and Haloarene</h2>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+  <script src="../data/data.js"></script>  
+  <script src="../parent script/chaptersScript.js"></script>
+  <script>
+    function gotToLandingPage(){
+      window.location.href="../";
+    }
+
+  </script>
+
+</body>
+</html>
