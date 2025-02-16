@@ -903,30 +903,12 @@ const gs_History_lectures = [
     lecAddress: ``,
     notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
   },
-  {
-    id: 'history_02',
-    lecName: `4 घंटे में Complete Ancient History का निचोड़`,
-    lecAddress: ``,
-    notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
-  },
-  {
-    id: 'history_03',
-    lecName: `3 घंटे में Complete Medieval History का निचोड़`,
-    lecAddress: ``,
-    notesAddress: `../../chapters/gsNotes/02_Geography/.pdf`,
-  },
-  {
-    id: 'history_04',
-    lecName: `3 घंटे में Complete MODERN HISTORY का निचोड़`,
-    lecAddress: ``,
-    notesAddress: `../../chapters/gsNotes/02_Geography/e.pdf`,
-  },
 ]
 const gs_Geo_lectures = [
   {
     id: '0084',
     lecName: `SOLAR SYSTEM LEC-1`,
-    lecAddress: ``,
+    lecAddress: `https://www.youtube-nocookie.com/embed/itXqdUKaM0k?si=bJQGPS3_7ShzMb9P`,
     notesAddress: `../../chapters/gsNotes/02_Geography/Lec_1 classnote.pdf`,
   },
   {
